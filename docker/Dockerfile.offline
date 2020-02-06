@@ -1,0 +1,33 @@
+FROM dockerhub.datagrand.com/base_image/python37:1.1
+MAINTAINER zhangyicheng <zhangyicheng@datagrand.com>
+
+RUN pip install -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com --upgrade pip
+
+# Host key verification
+COPY .ssh /root/.ssh
+RUN chmod 600 /root/.ssh/id_rsa
+COPY requirements.txt /requirements.txt
+
+# install requirements
+ADD requirements.txt /
+RUN pip install Cython==0.28.3 -i https://pypi.doubanio.com/simple/
+RUN pip install -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com -r requirements.txt &&\
+    rm ./requirements.txt
+
+# install extract_framework
+RUN cd / && git clone --depth=1 --single-branch -b release_20191018_python37 ssh://git@git.datagrand.com:58422/idps/extract_framework.git && \
+    cd extract_framework && pip install -r requirements.txt -i https://pypi.doubanio.com/simple/ && \
+    python setup.py install && cd .. && rm -rf extract_framework
+RUN rm -rf /root/.ssh
+
+# add code
+COPY . /classify_extract
+
+# expose port
+EXPOSE 8000
+
+# build so
+RUN cd /classify_extract && python setup.py build_ext
+
+# CMD
+CMD cd /classify_extract/admin && sh start_offline_service.sh

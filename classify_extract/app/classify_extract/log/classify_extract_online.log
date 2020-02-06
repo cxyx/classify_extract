@@ -1,0 +1,1244 @@
+2020-02-06 21:48:19,510+0800 - None - None - INFO - server.py:41 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 21:48:19,513+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 21:48:20,257+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_extract, type: custom
+2020-02-06 21:48:20,258+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 21:48:20,261+0800 - None - None - ERROR - base_engine.py:110 - _load_processor() - load processor_classify_extract error, exit. error info: cannot import name 'SPLIT_SIGN_DICT' from 'classify_extract.conf.conf' (/Users/chenxuan/workspace/classify_extract/classify_extract/conf/conf.py)
+2020-02-06 21:48:20,264+0800 - None - None - ERROR - base_engine.py:111 - _load_processor() - Traceback (most recent call last):
+  File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/base_engine.py", line 95, in _load_processor
+    module = importlib.import_module('.' + full_module_name, self._relative_import_base_package)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/processors/processor_classify_extract.py", line 7, in <module>
+    from ..common.extract_tools import start_extract
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/common/extract_tools.py", line 6, in <module>
+    from classify_extract.conf.conf import SPLIT_SIGN_DICT
+ImportError: cannot import name 'SPLIT_SIGN_DICT' from 'classify_extract.conf.conf' (/Users/chenxuan/workspace/classify_extract/classify_extract/conf/conf.py)
+
+2020-02-06 21:48:44,537+0800 - None - None - INFO - server.py:41 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 21:48:44,539+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 21:48:45,253+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_extract, type: custom
+2020-02-06 21:48:45,254+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 21:48:45,256+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 21:48:45,270+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 21:48:45,270+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 21:48:45,272+0800 - None - None - ERROR - dg_logging.py:186 - _exception() - 'content_to_text'	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/__init__.py", line 64, in initialize_single_user_engine        monitor_mode=monitor_mode,      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/single_user_engine.py", line 25, in __init__        super(SingleUserEngine, self).__init__(conf_module)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/base_engine.py", line 29, in __init__        self._load_workflows(*args, **kwargs)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/base_engine.py", line 125, in _load_workflows        *args, **kwargs)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/base_engine.py", line 130, in _load_workflow        *args, **kwargs)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/workflow.py", line 36, in __init__        self._load_processors(processor_name_list, processor_instance_dict)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/workflow.py", line 45, in _load_processors        processor = processor_instance_dict[processor_name]    KeyError: 'content_to_text'    
+2020-02-06 21:48:45,272+0800 - None - None - INFO - server.py:43 - __init__() - engine initialize finish
+2020-02-06 21:48:45,273+0800 - None - None - INFO - server.py:48 - start() - start server...
+2020-02-06 21:48:45,276+0800 - None - None - INFO - server.py:68 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 21:51:48,236+0800 - None - None - INFO - server.py:41 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 21:51:48,238+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 21:51:48,923+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_extract, type: custom
+2020-02-06 21:51:48,924+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 21:51:48,926+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 21:51:48,937+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 21:51:48,937+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 21:51:48,939+0800 - None - None - ERROR - dg_logging.py:186 - _exception() - 'content_to_text'	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/__init__.py", line 64, in initialize_single_user_engine        monitor_mode=monitor_mode,      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/single_user_engine.py", line 25, in __init__        super(SingleUserEngine, self).__init__(conf_module)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/base_engine.py", line 29, in __init__        self._load_workflows(*args, **kwargs)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/base_engine.py", line 125, in _load_workflows        *args, **kwargs)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/base_engine.py", line 130, in _load_workflow        *args, **kwargs)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/workflow.py", line 36, in __init__        self._load_processors(processor_name_list, processor_instance_dict)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/workflow.py", line 45, in _load_processors        processor = processor_instance_dict[processor_name]    KeyError: 'content_to_text'    
+2020-02-06 21:51:48,939+0800 - None - None - INFO - server.py:43 - __init__() - engine initialize finish
+2020-02-06 21:51:48,939+0800 - None - None - INFO - server.py:48 - start() - start server...
+2020-02-06 21:51:48,942+0800 - None - None - INFO - server.py:68 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 21:56:46,310+0800 - None - None - INFO - server.py:41 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 21:56:46,311+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 21:56:46,923+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_extract, type: custom
+2020-02-06 21:56:46,924+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 21:56:46,927+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 21:56:46,947+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 21:56:46,947+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 21:56:46,961+0800 - None - None - ERROR - dg_logging.py:186 - _exception() - 'content_to_text'	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/__init__.py", line 64, in initialize_single_user_engine        monitor_mode=monitor_mode,      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/single_user_engine.py", line 25, in __init__        super(SingleUserEngine, self).__init__(conf_module)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/base_engine.py", line 29, in __init__        self._load_workflows(*args, **kwargs)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/base_engine.py", line 125, in _load_workflows        *args, **kwargs)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/base_engine.py", line 130, in _load_workflow        *args, **kwargs)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/workflow.py", line 36, in __init__        self._load_processors(processor_name_list, processor_instance_dict)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/workflow.py", line 45, in _load_processors        processor = processor_instance_dict[processor_name]    KeyError: 'content_to_text'    
+2020-02-06 21:56:46,962+0800 - None - None - INFO - server.py:43 - __init__() - engine initialize finish
+2020-02-06 21:56:46,962+0800 - None - None - INFO - server.py:48 - start() - start server...
+2020-02-06 21:56:46,964+0800 - None - None - INFO - server.py:68 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 21:59:48,916+0800 - None - None - INFO - server.py:41 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 21:59:48,918+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 21:59:49,520+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_extract, type: custom
+2020-02-06 21:59:49,521+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 21:59:49,523+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 21:59:49,533+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 21:59:49,533+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 21:59:49,535+0800 - None - None - ERROR - dg_logging.py:186 - _exception() - 'content_to_text'	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/__init__.py", line 64, in initialize_single_user_engine        monitor_mode=monitor_mode,      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/single_user_engine.py", line 25, in __init__        super(SingleUserEngine, self).__init__(conf_module)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/base_engine.py", line 29, in __init__        self._load_workflows(*args, **kwargs)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/base_engine.py", line 125, in _load_workflows        *args, **kwargs)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/base_engine.py", line 130, in _load_workflow        *args, **kwargs)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/workflow.py", line 36, in __init__        self._load_processors(processor_name_list, processor_instance_dict)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/workflow.py", line 45, in _load_processors        processor = processor_instance_dict[processor_name]    KeyError: 'content_to_text'    
+2020-02-06 21:59:49,535+0800 - None - None - INFO - server.py:43 - __init__() - engine initialize finish
+2020-02-06 21:59:49,535+0800 - None - None - INFO - server.py:48 - start() - start server...
+2020-02-06 21:59:49,537+0800 - None - None - INFO - server.py:68 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 22:03:50,007+0800 - None - None - INFO - server.py:41 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 22:03:50,008+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 22:03:50,640+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 22:03:50,645+0800 - None - None - ERROR - base_engine.py:110 - _load_processor() - load processor_content_to_text error, exit. error info: module 'classify_extract.app.processors.processor_content_to_text' has no attribute 'ProcessorContentToText'
+2020-02-06 22:03:50,646+0800 - None - None - ERROR - base_engine.py:111 - _load_processor() - Traceback (most recent call last):
+  File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/base_engine.py", line 103, in _load_processor
+    processor_class = getattr(module, class_name)
+AttributeError: module 'classify_extract.app.processors.processor_content_to_text' has no attribute 'ProcessorContentToText'
+
+2020-02-06 22:03:58,358+0800 - None - None - INFO - server.py:41 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 22:03:58,359+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 22:03:58,923+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 22:03:58,925+0800 - None - None - ERROR - base_engine.py:110 - _load_processor() - load processor_content_to_text error, exit. error info: module 'classify_extract.app.processors.processor_content_to_text' has no attribute 'ProcessorContentToText'
+2020-02-06 22:03:58,926+0800 - None - None - ERROR - base_engine.py:111 - _load_processor() - Traceback (most recent call last):
+  File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/base_engine.py", line 103, in _load_processor
+    processor_class = getattr(module, class_name)
+AttributeError: module 'classify_extract.app.processors.processor_content_to_text' has no attribute 'ProcessorContentToText'
+
+2020-02-06 22:04:55,249+0800 - None - None - INFO - server.py:41 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 22:04:55,250+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 22:04:55,767+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: to_text, type: custom
+2020-02-06 22:04:55,770+0800 - None - None - ERROR - base_engine.py:110 - _load_processor() - load processor_to_text error, exit. error info: module 'classify_extract.app.processors.processor_to_text' has no attribute 'ProcessorToText'
+2020-02-06 22:04:55,772+0800 - None - None - ERROR - base_engine.py:111 - _load_processor() - Traceback (most recent call last):
+  File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/base_engine.py", line 103, in _load_processor
+    processor_class = getattr(module, class_name)
+AttributeError: module 'classify_extract.app.processors.processor_to_text' has no attribute 'ProcessorToText'
+
+2020-02-06 22:05:37,629+0800 - None - None - INFO - server.py:41 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 22:05:37,631+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 22:05:38,148+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: to_text, type: custom
+2020-02-06 22:05:38,149+0800 - None - None - ERROR - base_engine.py:110 - _load_processor() - load processor_to_text error, exit. error info: module 'classify_extract.app.processors.processor_to_text' has no attribute 'ProcessorToText'
+2020-02-06 22:05:38,150+0800 - None - None - ERROR - base_engine.py:111 - _load_processor() - Traceback (most recent call last):
+  File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/base_engine.py", line 103, in _load_processor
+    processor_class = getattr(module, class_name)
+AttributeError: module 'classify_extract.app.processors.processor_to_text' has no attribute 'ProcessorToText'
+
+2020-02-06 22:06:03,454+0800 - None - None - INFO - server.py:41 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 22:06:03,455+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 22:06:04,025+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 22:06:04,030+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 22:06:04,043+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 22:06:04,043+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 22:06:04,043+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 22:06:04,043+0800 - None - None - INFO - server.py:43 - __init__() - engine initialize finish
+2020-02-06 22:06:04,043+0800 - None - None - INFO - server.py:48 - start() - start server...
+2020-02-06 22:06:04,046+0800 - None - None - INFO - server.py:68 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 22:07:29,119+0800 - None - None - INFO - server.py:41 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 22:07:29,119+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 22:07:29,683+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: text, type: custom
+2020-02-06 22:07:29,687+0800 - None - None - ERROR - base_engine.py:110 - _load_processor() - load processor_text error, exit. error info: module 'classify_extract.app.processors.processor_text' has no attribute 'ProcessorText'
+2020-02-06 22:07:29,688+0800 - None - None - ERROR - base_engine.py:111 - _load_processor() - Traceback (most recent call last):
+  File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/base_engine.py", line 103, in _load_processor
+    processor_class = getattr(module, class_name)
+AttributeError: module 'classify_extract.app.processors.processor_text' has no attribute 'ProcessorText'
+
+2020-02-06 22:09:39,281+0800 - None - None - INFO - server.py:41 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 22:09:39,283+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 22:09:40,052+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: text, type: custom
+2020-02-06 22:09:40,058+0800 - None - None - ERROR - base_engine.py:110 - _load_processor() - load processor_text error, exit. error info: module 'classify_extract.app.processors.processor_text' has no attribute 'ProcessorText'
+2020-02-06 22:09:40,059+0800 - None - None - ERROR - base_engine.py:111 - _load_processor() - Traceback (most recent call last):
+  File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/base_engine.py", line 103, in _load_processor
+    processor_class = getattr(module, class_name)
+AttributeError: module 'classify_extract.app.processors.processor_text' has no attribute 'ProcessorText'
+
+2020-02-06 22:14:01,234+0800 - None - None - INFO - server.py:41 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 22:14:01,237+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 22:14:01,993+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: text, type: custom
+2020-02-06 22:14:02,000+0800 - None - None - ERROR - base_engine.py:110 - _load_processor() - load processor_text error, exit. error info: module 'classify_extract.app.processors.processor_text' has no attribute 'ProcessorText'
+2020-02-06 22:14:02,002+0800 - None - None - ERROR - base_engine.py:111 - _load_processor() - Traceback (most recent call last):
+  File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/base_engine.py", line 103, in _load_processor
+    processor_class = getattr(module, class_name)
+AttributeError: module 'classify_extract.app.processors.processor_text' has no attribute 'ProcessorText'
+
+2020-02-06 22:14:28,749+0800 - None - None - INFO - server.py:41 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 22:14:28,750+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 22:14:29,314+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 22:14:29,316+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract1, type: custom
+2020-02-06 22:14:29,316+0800 - None - None - ERROR - base_engine.py:110 - _load_processor() - load processor_classify_extract1 error, exit. error info: No module named 'classify_extract.app.processors.processor_classify_extract1'
+2020-02-06 22:14:29,320+0800 - None - None - ERROR - base_engine.py:111 - _load_processor() - Traceback (most recent call last):
+  File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/base_engine.py", line 95, in _load_processor
+    module = importlib.import_module('.' + full_module_name, self._relative_import_base_package)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'classify_extract.app.processors.processor_classify_extract1'
+
+2020-02-06 22:14:49,928+0800 - None - None - INFO - server.py:41 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 22:14:49,930+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 22:14:50,598+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 22:14:50,601+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract1, type: custom
+2020-02-06 22:14:50,601+0800 - None - None - ERROR - base_engine.py:110 - _load_processor() - load processor_classify_extract1 error, exit. error info: No module named 'classify_extract.app.processors.processor_classify_extract1'
+2020-02-06 22:14:50,603+0800 - None - None - ERROR - base_engine.py:111 - _load_processor() - Traceback (most recent call last):
+  File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/base_engine.py", line 95, in _load_processor
+    module = importlib.import_module('.' + full_module_name, self._relative_import_base_package)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'classify_extract.app.processors.processor_classify_extract1'
+
+2020-02-06 22:15:10,939+0800 - None - None - INFO - server.py:41 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 22:15:10,941+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 22:15:11,686+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 22:15:11,689+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 22:15:11,706+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 22:15:11,707+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 22:15:11,707+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 22:15:11,707+0800 - None - None - INFO - server.py:43 - __init__() - engine initialize finish
+2020-02-06 22:15:11,707+0800 - None - None - INFO - server.py:48 - start() - start server...
+2020-02-06 22:15:11,709+0800 - None - None - INFO - server.py:68 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 22:15:45,536+0800 - None - None - INFO - server.py:41 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 22:15:45,537+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 22:15:46,059+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: text, type: custom
+2020-02-06 22:15:46,062+0800 - None - None - ERROR - base_engine.py:110 - _load_processor() - load processor_text error, exit. error info: module 'classify_extract.app.processors.processor_text' has no attribute 'ProcessorText'
+2020-02-06 22:15:46,063+0800 - None - None - ERROR - base_engine.py:111 - _load_processor() - Traceback (most recent call last):
+  File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/base_engine.py", line 103, in _load_processor
+    processor_class = getattr(module, class_name)
+AttributeError: module 'classify_extract.app.processors.processor_text' has no attribute 'ProcessorText'
+
+2020-02-06 22:17:56,603+0800 - None - None - INFO - server.py:41 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 22:17:56,604+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 22:17:57,310+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to__text, type: custom
+2020-02-06 22:17:57,310+0800 - None - None - ERROR - base_engine.py:110 - _load_processor() - load processor_content_to__text error, exit. error info: No module named 'classify_extract.app.processors.processor_content_to__text'
+2020-02-06 22:17:57,313+0800 - None - None - ERROR - base_engine.py:111 - _load_processor() - Traceback (most recent call last):
+  File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/base_engine.py", line 95, in _load_processor
+    module = importlib.import_module('.' + full_module_name, self._relative_import_base_package)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'classify_extract.app.processors.processor_content_to__text'
+
+2020-02-06 22:18:24,467+0800 - None - None - INFO - server.py:41 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 22:18:24,469+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 22:18:25,126+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to__text, type: custom
+2020-02-06 22:18:25,127+0800 - None - None - ERROR - base_engine.py:110 - _load_processor() - load processor_content_to__text error, exit. error info: No module named 'classify_extract.app.processors.processor_content_to__text'
+2020-02-06 22:18:25,128+0800 - None - None - ERROR - base_engine.py:111 - _load_processor() - Traceback (most recent call last):
+  File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/base_engine.py", line 95, in _load_processor
+    module = importlib.import_module('.' + full_module_name, self._relative_import_base_package)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'classify_extract.app.processors.processor_content_to__text'
+
+2020-02-06 22:18:40,665+0800 - None - None - INFO - server.py:41 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 22:18:40,666+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 22:18:41,373+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 22:18:41,378+0800 - None - None - ERROR - base_engine.py:110 - _load_processor() - load processor_content_to_text error, exit. error info: module 'classify_extract.app.processors.processor_content_to_text' has no attribute 'ProcessorContentToText'
+2020-02-06 22:18:41,379+0800 - None - None - ERROR - base_engine.py:111 - _load_processor() - Traceback (most recent call last):
+  File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/base_engine.py", line 103, in _load_processor
+    processor_class = getattr(module, class_name)
+AttributeError: module 'classify_extract.app.processors.processor_content_to_text' has no attribute 'ProcessorContentToText'
+
+2020-02-06 22:18:44,043+0800 - None - None - INFO - server.py:41 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 22:18:44,043+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 22:18:44,409+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 22:18:44,410+0800 - None - None - ERROR - base_engine.py:110 - _load_processor() - load processor_content_to_text error, exit. error info: module 'classify_extract.app.processors.processor_content_to_text' has no attribute 'ProcessorContentToText'
+2020-02-06 22:18:44,410+0800 - None - None - ERROR - base_engine.py:111 - _load_processor() - Traceback (most recent call last):
+  File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/engine/base_engine.py", line 103, in _load_processor
+    processor_class = getattr(module, class_name)
+AttributeError: module 'classify_extract.app.processors.processor_content_to_text' has no attribute 'ProcessorContentToText'
+
+2020-02-06 22:19:15,563+0800 - None - None - INFO - server.py:41 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 22:19:15,564+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 22:19:16,061+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 22:19:16,065+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 22:19:16,066+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 22:19:16,078+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 22:19:16,078+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 22:19:16,079+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 22:19:16,079+0800 - None - None - INFO - server.py:43 - __init__() - engine initialize finish
+2020-02-06 22:19:16,079+0800 - None - None - INFO - server.py:48 - start() - start server...
+2020-02-06 22:19:16,082+0800 - None - None - INFO - server.py:68 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 22:29:56,071+0800 - None - None - INFO - server.py:40 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 22:29:56,072+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 22:29:56,814+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 22:29:56,818+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 22:29:56,819+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 22:29:56,833+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 22:29:56,834+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 22:29:56,834+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 22:29:56,834+0800 - None - None - INFO - server.py:42 - __init__() - engine initialize finish
+2020-02-06 22:29:56,834+0800 - None - None - INFO - server.py:48 - start() - start server...
+2020-02-06 22:29:56,836+0800 - None - None - INFO - server.py:68 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 22:51:30,932+0800 - None - None - INFO - server.py:40 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 22:51:30,932+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 22:51:31,623+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 22:51:31,627+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 22:51:31,629+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 22:51:31,642+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 22:51:31,642+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 22:51:31,642+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 22:51:31,642+0800 - None - None - INFO - server.py:42 - __init__() - engine initialize finish
+2020-02-06 22:51:31,642+0800 - None - None - INFO - server.py:48 - start() - start server...
+2020-02-06 22:51:31,646+0800 - None - None - INFO - server.py:68 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 22:53:04,925+0800 - None - None - INFO - server.py:40 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 22:53:04,926+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 22:53:05,594+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 22:53:05,597+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 22:53:05,598+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 22:53:05,610+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 22:53:05,610+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 22:53:05,611+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 22:53:05,611+0800 - None - None - INFO - server.py:42 - __init__() - engine initialize finish
+2020-02-06 22:53:05,611+0800 - None - None - INFO - server.py:48 - start() - start server...
+2020-02-06 22:53:05,614+0800 - None - None - INFO - server.py:68 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 22:58:44,461+0800 - None - None - INFO - server.py:65 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 22:58:44,462+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 22:58:45,088+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 22:58:45,091+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 22:58:45,092+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 22:58:45,103+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 22:58:45,103+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 22:58:45,103+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 22:58:45,104+0800 - None - None - INFO - server.py:67 - __init__() - engine initialize finish
+2020-02-06 22:58:45,104+0800 - None - None - INFO - server.py:73 - start() - start server...
+2020-02-06 22:58:45,108+0800 - None - None - INFO - server.py:96 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:00:13,702+0800 - None - None - INFO - server.py:65 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:00:13,703+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:00:14,331+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:00:14,334+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:00:14,335+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:00:14,347+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:00:14,347+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:00:14,348+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:00:14,348+0800 - None - None - INFO - server.py:67 - __init__() - engine initialize finish
+2020-02-06 23:00:14,348+0800 - None - None - INFO - server.py:73 - start() - start server...
+2020-02-06 23:00:14,350+0800 - None - None - INFO - server.py:96 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:01:40,780+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:01:40,781+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:01:41,413+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:01:41,415+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:01:41,417+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:01:41,432+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:01:41,432+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:01:41,432+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:01:41,432+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:01:41,432+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:01:41,435+0800 - None - None - INFO - server.py:79 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:03:24,987+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:03:24,988+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:03:25,722+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:03:25,727+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:03:25,729+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:03:25,743+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:03:25,743+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:03:25,744+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:03:25,744+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:03:25,744+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:03:25,746+0800 - None - None - INFO - server.py:78 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:03:57,659+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:03:57,660+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:03:58,372+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:03:58,375+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:03:58,376+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:03:58,391+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:03:58,391+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:03:58,391+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:03:58,392+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:03:58,392+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:03:58,394+0800 - None - None - INFO - server.py:78 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:04:24,684+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:04:24,686+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:04:25,350+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:04:25,352+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:04:25,353+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:04:25,366+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:04:25,367+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:04:25,367+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:04:25,367+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:04:25,367+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:04:25,369+0800 - None - None - INFO - server.py:75 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:04:59,001+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:04:59,002+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:04:59,715+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:04:59,719+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:04:59,720+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:04:59,734+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:04:59,734+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:04:59,734+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:04:59,734+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:04:59,734+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:04:59,737+0800 - None - None - INFO - server.py:76 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:05:10,546+0800 - None - ae9dc3f2-3701-48ed-8aae-221b09333176 - ERROR - dg_logging.py:186 - _exception() - 'doctype'	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 63, in post        doctype, content, rich_content = str(data['doctype']), data['content'], data['rich_content']    KeyError: 'doctype'    
+2020-02-06 23:05:10,546+0800 - None - ae9dc3f2-3701-48ed-8aae-221b09333176 - INFO - predict_handlers.py:73 - post() - results: {"status": "ERROR", "msg": "'doctype'"}, cost time: 0.0012140274047851562s
+2020-02-06 23:07:02,482+0800 - None - 7517de74-df72-4c79-a44f-35a0f498a80d - ERROR - dg_logging.py:186 - _exception() - unhashable type: 'slice'	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 65, in post        list(data.keys()), doctype, content[:100]))    TypeError: unhashable type: 'slice'    
+2020-02-06 23:07:02,484+0800 - None - 7517de74-df72-4c79-a44f-35a0f498a80d - INFO - predict_handlers.py:73 - post() - results: {"status": "ERROR", "msg": "unhashable type: 'slice'"}, cost time: 0.001995086669921875s
+2020-02-06 23:07:09,280+0800 - None - 61b24fa5-59c6-4c5e-9fd4-37d22947cd2c - ERROR - dg_logging.py:186 - _exception() - unhashable type: 'slice'	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 65, in post        list(data.keys()), doctype, content[:100]))    TypeError: unhashable type: 'slice'    
+2020-02-06 23:07:09,280+0800 - None - 61b24fa5-59c6-4c5e-9fd4-37d22947cd2c - INFO - predict_handlers.py:73 - post() - results: {"status": "ERROR", "msg": "unhashable type: 'slice'"}, cost time: 0.0003368854522705078s
+2020-02-06 23:07:45,954+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:07:45,955+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:07:46,590+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:07:46,593+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:07:46,594+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:07:46,607+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:07:46,607+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:07:46,607+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:07:46,607+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:07:46,607+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:07:46,609+0800 - None - None - INFO - server.py:76 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:07:48,921+0800 - None - 2365325d-5fea-42b9-9337-8797c33db33c - INFO - predict_handlers.py:33 - predict() - start to run online workflow
+2020-02-06 23:07:48,921+0800 - None - 2365325d-5fea-42b9-9337-8797c33db33c - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "down" method start
+2020-02-06 23:07:48,928+0800 - None - 2365325d-5fea-42b9-9337-8797c33db33c - ERROR - dg_logging.py:186 - _exception() - expected string or bytes-like object	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 66, in post        result.update(self.predict(doctype, content, rich_content))      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 42, in predict        output = workflow.run(request_property)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/workflow.py", line 72, in run        output = procession.run(tmp_result)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/procession.py", line 34, in run        direction = cur_processor.process(tmp_result, output, self._request_property)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/processors/processor_base.py", line 69, in process        self.down(tmp_result, output, request_property)      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/processors/processor_content_to_text.py", line 36, in down        re_opontions = re.search(r'审批意见[:：]', text)      File "/Users/chenxuan/opt/anaconda3/lib/python3.7/re.py", line 183, in search        return _compile(pattern, flags).search(string)    TypeError: expected string or bytes-like object    
+2020-02-06 23:07:48,928+0800 - None - 2365325d-5fea-42b9-9337-8797c33db33c - INFO - predict_handlers.py:73 - post() - results: {"status": "ERROR", "msg": "expected string or bytes-like object"}, cost time: 0.007267951965332031s
+2020-02-06 23:09:03,630+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:09:03,631+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:09:04,261+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:09:04,265+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:09:04,267+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:09:04,281+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:09:04,281+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:09:04,282+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:09:04,282+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:09:04,282+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:09:04,285+0800 - None - None - INFO - server.py:76 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:09:06,832+0800 - None - 85187784-a947-49a7-9ac7-8a371f5a2d04 - INFO - predict_handlers.py:33 - predict() - start to run online workflow
+2020-02-06 23:09:06,832+0800 - None - 85187784-a947-49a7-9ac7-8a371f5a2d04 - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "down" method start
+2020-02-06 23:09:06,836+0800 - None - 85187784-a947-49a7-9ac7-8a371f5a2d04 - ERROR - dg_logging.py:186 - _exception() - expected string or bytes-like object	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 66, in post        self.predict(doctype, content, rich_content)      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 42, in predict        output = workflow.run(request_property)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/workflow.py", line 72, in run        output = procession.run(tmp_result)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/procession.py", line 34, in run        direction = cur_processor.process(tmp_result, output, self._request_property)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/processors/processor_base.py", line 69, in process        self.down(tmp_result, output, request_property)      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/processors/processor_content_to_text.py", line 36, in down        re_opontions = re.search(r'审批意见[:：]', text)      File "/Users/chenxuan/opt/anaconda3/lib/python3.7/re.py", line 183, in search        return _compile(pattern, flags).search(string)    TypeError: expected string or bytes-like object    
+2020-02-06 23:09:06,836+0800 - None - 85187784-a947-49a7-9ac7-8a371f5a2d04 - INFO - predict_handlers.py:74 - post() - results: {"status": "ERROR", "msg": "expected string or bytes-like object"}, cost time: 0.004271984100341797s
+2020-02-06 23:10:18,556+0800 - None - None - ERROR - dg_logging.py:186 - _exception() - Expecting value: line 3 column 12 (char 28)	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 59, in post        data = json.loads(self.request.body)      File "/Users/chenxuan/opt/anaconda3/lib/python3.7/json/__init__.py", line 348, in loads        return _default_decoder.decode(s)      File "/Users/chenxuan/opt/anaconda3/lib/python3.7/json/decoder.py", line 337, in decode        obj, end = self.raw_decode(s, idx=_w(s, 0).end())      File "/Users/chenxuan/opt/anaconda3/lib/python3.7/json/decoder.py", line 355, in raw_decode        raise JSONDecodeError("Expecting value", s, err.value) from None    json.decoder.JSONDecodeError: Expecting value: line 3 column 12 (char 28)    
+2020-02-06 23:10:18,558+0800 - None - None - INFO - predict_handlers.py:74 - post() - results: {"status": "ERROR", "msg": "Expecting value: line 3 column 12 (char 28)"}, cost time: 0.006273031234741211s
+2020-02-06 23:10:24,326+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:10:24,327+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:10:25,063+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:10:25,065+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:10:25,067+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:10:25,081+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:10:25,081+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:10:25,081+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:10:25,082+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:10:25,082+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:10:25,084+0800 - None - None - INFO - server.py:76 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:10:28,464+0800 - None - None - ERROR - dg_logging.py:186 - _exception() - Expecting value: line 3 column 12 (char 28)	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 59, in post        data = json.loads(self.request.body)      File "/Users/chenxuan/opt/anaconda3/lib/python3.7/json/__init__.py", line 348, in loads        return _default_decoder.decode(s)      File "/Users/chenxuan/opt/anaconda3/lib/python3.7/json/decoder.py", line 337, in decode        obj, end = self.raw_decode(s, idx=_w(s, 0).end())      File "/Users/chenxuan/opt/anaconda3/lib/python3.7/json/decoder.py", line 355, in raw_decode        raise JSONDecodeError("Expecting value", s, err.value) from None    json.decoder.JSONDecodeError: Expecting value: line 3 column 12 (char 28)    
+2020-02-06 23:10:28,464+0800 - None - None - INFO - predict_handlers.py:74 - post() - results: {"status": "ERROR", "msg": "Expecting value: line 3 column 12 (char 28)"}, cost time: 0.0037178993225097656s
+2020-02-06 23:10:54,701+0800 - None - a55a20fe-c81d-4556-8e5c-829a2ddc117b - INFO - predict_handlers.py:33 - predict() - start to run online workflow
+2020-02-06 23:10:54,702+0800 - None - a55a20fe-c81d-4556-8e5c-829a2ddc117b - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "down" method start
+2020-02-06 23:10:54,707+0800 - None - a55a20fe-c81d-4556-8e5c-829a2ddc117b - ERROR - dg_logging.py:186 - _exception() - list index out of range	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 66, in post        self.predict(doctype, content, rich_content)      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 42, in predict        output = workflow.run(request_property)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/workflow.py", line 72, in run        output = procession.run(tmp_result)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/procession.py", line 34, in run        direction = cur_processor.process(tmp_result, output, self._request_property)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/processors/processor_base.py", line 69, in process        self.down(tmp_result, output, request_property)      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/processors/processor_content_to_text.py", line 71, in down        print("{},{}".format(opontions[1][0] if opontions[1] else "NULL", opontions[0] if opontions else "NULL"))    IndexError: list index out of range    
+2020-02-06 23:10:54,707+0800 - None - a55a20fe-c81d-4556-8e5c-829a2ddc117b - INFO - predict_handlers.py:74 - post() - results: {"status": "ERROR", "msg": "list index out of range"}, cost time: 0.006395816802978516s
+2020-02-06 23:11:01,875+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:11:01,876+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:11:02,387+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:11:02,390+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:11:02,391+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:11:02,403+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:11:02,404+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:11:02,404+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:11:02,404+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:11:02,404+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:11:02,407+0800 - None - None - INFO - server.py:76 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:11:04,598+0800 - None - e01fd197-96c7-4ea7-aff8-2b701e15e645 - INFO - predict_handlers.py:33 - predict() - start to run online workflow
+2020-02-06 23:11:04,598+0800 - None - e01fd197-96c7-4ea7-aff8-2b701e15e645 - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "down" method start
+2020-02-06 23:11:04,604+0800 - None - e01fd197-96c7-4ea7-aff8-2b701e15e645 - ERROR - dg_logging.py:186 - _exception() - list index out of range	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 66, in post        self.predict(doctype, content, rich_content)      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 42, in predict        output = workflow.run(request_property)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/workflow.py", line 72, in run        output = procession.run(tmp_result)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/procession.py", line 34, in run        direction = cur_processor.process(tmp_result, output, self._request_property)      File "/Users/chenxuan/workspace/classify_extract/u_shape_framework/processors/processor_base.py", line 69, in process        self.down(tmp_result, output, request_property)      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/processors/processor_content_to_text.py", line 71, in down        print("{},{}".format(opontions[1][0] if opontions[1] else "NULL", opontions[0] if opontions else "NULL"))    IndexError: list index out of range    
+2020-02-06 23:11:04,604+0800 - None - e01fd197-96c7-4ea7-aff8-2b701e15e645 - INFO - predict_handlers.py:74 - post() - results: {"status": "ERROR", "msg": "list index out of range"}, cost time: 0.0063669681549072266s
+2020-02-06 23:13:48,512+0800 - None - None - ERROR - dg_logging.py:186 - _exception() - Invalid control character at: line 3 column 911 (char 927)	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 59, in post        data = json.loads(self.request.body)      File "/Users/chenxuan/opt/anaconda3/lib/python3.7/json/__init__.py", line 348, in loads        return _default_decoder.decode(s)      File "/Users/chenxuan/opt/anaconda3/lib/python3.7/json/decoder.py", line 337, in decode        obj, end = self.raw_decode(s, idx=_w(s, 0).end())      File "/Users/chenxuan/opt/anaconda3/lib/python3.7/json/decoder.py", line 353, in raw_decode        obj, end = self.scan_once(s, idx)    json.decoder.JSONDecodeError: Invalid control character at: line 3 column 911 (char 927)    
+2020-02-06 23:13:48,514+0800 - None - None - INFO - predict_handlers.py:74 - post() - results: {"status": "ERROR", "msg": "Invalid control character at: line 3 column 911 (char 927)"}, cost time: 0.006599903106689453s
+2020-02-06 23:14:01,094+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:14:01,095+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:14:01,818+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:14:01,822+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:14:01,823+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:14:01,837+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:14:01,837+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:14:01,837+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:14:01,837+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:14:01,837+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:14:01,840+0800 - None - None - INFO - server.py:76 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:14:04,864+0800 - None - None - ERROR - dg_logging.py:186 - _exception() - Invalid control character at: line 3 column 911 (char 927)	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 59, in post        data = json.loads(self.request.body)      File "/Users/chenxuan/opt/anaconda3/lib/python3.7/json/__init__.py", line 348, in loads        return _default_decoder.decode(s)      File "/Users/chenxuan/opt/anaconda3/lib/python3.7/json/decoder.py", line 337, in decode        obj, end = self.raw_decode(s, idx=_w(s, 0).end())      File "/Users/chenxuan/opt/anaconda3/lib/python3.7/json/decoder.py", line 353, in raw_decode        obj, end = self.scan_once(s, idx)    json.decoder.JSONDecodeError: Invalid control character at: line 3 column 911 (char 927)    
+2020-02-06 23:14:04,864+0800 - None - None - INFO - predict_handlers.py:74 - post() - results: {"status": "ERROR", "msg": "Invalid control character at: line 3 column 911 (char 927)"}, cost time: 0.003458738327026367s
+2020-02-06 23:15:20,280+0800 - None - None - ERROR - dg_logging.py:186 - _exception() - Invalid control character at: line 3 column 911 (char 927)	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 59, in post        data = json.loads(self.request.body)      File "/Users/chenxuan/opt/anaconda3/lib/python3.7/json/__init__.py", line 348, in loads        return _default_decoder.decode(s)      File "/Users/chenxuan/opt/anaconda3/lib/python3.7/json/decoder.py", line 337, in decode        obj, end = self.raw_decode(s, idx=_w(s, 0).end())      File "/Users/chenxuan/opt/anaconda3/lib/python3.7/json/decoder.py", line 353, in raw_decode        obj, end = self.scan_once(s, idx)    json.decoder.JSONDecodeError: Invalid control character at: line 3 column 911 (char 927)    
+2020-02-06 23:15:20,281+0800 - None - None - INFO - predict_handlers.py:74 - post() - results: {"status": "ERROR", "msg": "Invalid control character at: line 3 column 911 (char 927)"}, cost time: 0.0008492469787597656s
+2020-02-06 23:15:44,320+0800 - None - 6f1de9a3-a92b-4747-9953-26b8af181b0b - INFO - predict_handlers.py:33 - predict() - start to run online workflow
+2020-02-06 23:15:44,321+0800 - None - 6f1de9a3-a92b-4747-9953-26b8af181b0b - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "down" method start
+2020-02-06 23:15:44,328+0800 - None - 6f1de9a3-a92b-4747-9953-26b8af181b0b - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "down" method end, next direction: "down"
+2020-02-06 23:15:44,328+0800 - None - 6f1de9a3-a92b-4747-9953-26b8af181b0b - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "down" method start
+2020-02-06 23:15:44,328+0800 - None - 6f1de9a3-a92b-4747-9953-26b8af181b0b - INFO - extract_tools.py:28 - extract_approval_opinion() - each信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度
+2020-02-06 23:15:44,328+0800 - None - 6f1de9a3-a92b-4747-9953-26b8af181b0b - INFO - extract_tools.py:29 - extract_approval_opinion() - eachtype<class 'str'>
+2020-02-06 23:15:44,330+0800 - None - 6f1de9a3-a92b-4747-9953-26b8af181b0b - ERROR - extract_tools.py:155 - start_extract() - 抽取审批意见报错
+2020-02-06 23:15:44,330+0800 - None - 6f1de9a3-a92b-4747-9953-26b8af181b0b - ERROR - extract_tools.py:156 - start_extract() - No connection adapters were found for '{'text': '信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度'}'
+2020-02-06 23:15:44,331+0800 - None - 6f1de9a3-a92b-4747-9953-26b8af181b0b - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:1、取得总行授信批复；2、发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；3、在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；4、发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:15:44,331+0800 - None - 6f1de9a3-a92b-4747-9953-26b8af181b0b - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:取得总行授信批复；
+2020-02-06 23:15:44,332+0800 - None - 6f1de9a3-a92b-4747-9953-26b8af181b0b - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；
+2020-02-06 23:15:44,332+0800 - None - 6f1de9a3-a92b-4747-9953-26b8af181b0b - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；
+2020-02-06 23:15:44,332+0800 - None - 6f1de9a3-a92b-4747-9953-26b8af181b0b - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:15:44,333+0800 - None - 6f1de9a3-a92b-4747-9953-26b8af181b0b - ERROR - extract_tools.py:163 - start_extract() - 抽取前提条件报错
+2020-02-06 23:15:44,336+0800 - None - 6f1de9a3-a92b-4747-9953-26b8af181b0b - ERROR - extract_tools.py:164 - start_extract() - No connection adapters were found for '{'text': '取得总行授信批复'}'Traceback (most recent call last):
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/common/extract_tools.py", line 160, in start_extract
+    items2 = extract_preconditions(prerequisite, model_dir) if prerequisite else {}
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/common/extract_tools.py", line 66, in extract_preconditions
+    field_id, prob = extract(tk_content, model_dir)
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/common/extract_tools.py", line 190, in extract
+    requests.post(text_dict)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 640, in send
+    adapter = self.get_adapter(url=request.url)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 731, in get_adapter
+    raise InvalidSchema("No connection adapters were found for '%s'" % url)
+requests.exceptions.InvalidSchema: No connection adapters were found for '{'text': '取得总行授信批复'}'
+
+2020-02-06 23:15:44,337+0800 - None - 6f1de9a3-a92b-4747-9953-26b8af181b0b - ERROR - extract_tools.py:171 - start_extract() - 抽取管理要求报错
+2020-02-06 23:15:44,337+0800 - None - 6f1de9a3-a92b-4747-9953-26b8af181b0b - ERROR - extract_tools.py:172 - start_extract() - No connection adapters were found for '{'text': '1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销'}'
+2020-02-06 23:15:44,337+0800 - None - 6f1de9a3-a92b-4747-9953-26b8af181b0b - INFO - extract_tools.py:174 - start_extract() - start_extract::{}
+2020-02-06 23:15:44,338+0800 - None - 6f1de9a3-a92b-4747-9953-26b8af181b0b - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "down" method end, next direction: "down"
+2020-02-06 23:15:44,338+0800 - None - 6f1de9a3-a92b-4747-9953-26b8af181b0b - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "up" method start
+2020-02-06 23:15:44,338+0800 - None - 6f1de9a3-a92b-4747-9953-26b8af181b0b - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "up" method end, next direction: "up"
+2020-02-06 23:15:44,338+0800 - None - 6f1de9a3-a92b-4747-9953-26b8af181b0b - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "up" method start
+2020-02-06 23:15:44,338+0800 - None - 6f1de9a3-a92b-4747-9953-26b8af181b0b - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "up" method end, next direction: "up"
+2020-02-06 23:15:44,338+0800 - None - 6f1de9a3-a92b-4747-9953-26b8af181b0b - ERROR - dg_logging.py:186 - _exception() - 'scripts_results'	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 66, in post        self.predict(doctype, content, rich_content)      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 44, in predict        'result': output['scripts_results'],    KeyError: 'scripts_results'    
+2020-02-06 23:15:44,338+0800 - None - 6f1de9a3-a92b-4747-9953-26b8af181b0b - INFO - predict_handlers.py:74 - post() - results: {"status": "ERROR", "msg": "'scripts_results'"}, cost time: 0.018194913864135742s
+2020-02-06 23:15:52,067+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:15:52,068+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:15:52,581+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:15:52,584+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:15:52,585+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:15:52,596+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:15:52,596+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:15:52,596+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:15:52,597+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:15:52,597+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:15:52,599+0800 - None - None - INFO - server.py:76 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:15:55,123+0800 - None - 4c022b88-766e-4b88-b5df-afde81949f17 - INFO - predict_handlers.py:33 - predict() - start to run online workflow
+2020-02-06 23:15:55,123+0800 - None - 4c022b88-766e-4b88-b5df-afde81949f17 - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "down" method start
+2020-02-06 23:15:55,128+0800 - None - 4c022b88-766e-4b88-b5df-afde81949f17 - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "down" method end, next direction: "down"
+2020-02-06 23:15:55,128+0800 - None - 4c022b88-766e-4b88-b5df-afde81949f17 - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "down" method start
+2020-02-06 23:15:55,128+0800 - None - 4c022b88-766e-4b88-b5df-afde81949f17 - INFO - extract_tools.py:28 - extract_approval_opinion() - each信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度
+2020-02-06 23:15:55,128+0800 - None - 4c022b88-766e-4b88-b5df-afde81949f17 - INFO - extract_tools.py:29 - extract_approval_opinion() - eachtype<class 'str'>
+2020-02-06 23:15:55,130+0800 - None - 4c022b88-766e-4b88-b5df-afde81949f17 - ERROR - extract_tools.py:155 - start_extract() - 抽取审批意见报错
+2020-02-06 23:15:55,130+0800 - None - 4c022b88-766e-4b88-b5df-afde81949f17 - ERROR - extract_tools.py:156 - start_extract() - No connection adapters were found for '{'text': '信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度'}'
+2020-02-06 23:15:55,131+0800 - None - 4c022b88-766e-4b88-b5df-afde81949f17 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:1、取得总行授信批复；2、发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；3、在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；4、发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:15:55,131+0800 - None - 4c022b88-766e-4b88-b5df-afde81949f17 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:取得总行授信批复；
+2020-02-06 23:15:55,132+0800 - None - 4c022b88-766e-4b88-b5df-afde81949f17 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；
+2020-02-06 23:15:55,132+0800 - None - 4c022b88-766e-4b88-b5df-afde81949f17 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；
+2020-02-06 23:15:55,132+0800 - None - 4c022b88-766e-4b88-b5df-afde81949f17 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:15:55,133+0800 - None - 4c022b88-766e-4b88-b5df-afde81949f17 - ERROR - extract_tools.py:163 - start_extract() - 抽取前提条件报错
+2020-02-06 23:15:55,136+0800 - None - 4c022b88-766e-4b88-b5df-afde81949f17 - ERROR - extract_tools.py:164 - start_extract() - No connection adapters were found for '{'text': '取得总行授信批复'}'Traceback (most recent call last):
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/common/extract_tools.py", line 160, in start_extract
+    items2 = extract_preconditions(prerequisite, model_dir) if prerequisite else {}
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/common/extract_tools.py", line 66, in extract_preconditions
+    field_id, prob = extract(tk_content, model_dir)
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/common/extract_tools.py", line 190, in extract
+    requests.post(text_dict)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 640, in send
+    adapter = self.get_adapter(url=request.url)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 731, in get_adapter
+    raise InvalidSchema("No connection adapters were found for '%s'" % url)
+requests.exceptions.InvalidSchema: No connection adapters were found for '{'text': '取得总行授信批复'}'
+
+2020-02-06 23:15:55,137+0800 - None - 4c022b88-766e-4b88-b5df-afde81949f17 - ERROR - extract_tools.py:171 - start_extract() - 抽取管理要求报错
+2020-02-06 23:15:55,137+0800 - None - 4c022b88-766e-4b88-b5df-afde81949f17 - ERROR - extract_tools.py:172 - start_extract() - No connection adapters were found for '{'text': '1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销'}'
+2020-02-06 23:15:55,137+0800 - None - 4c022b88-766e-4b88-b5df-afde81949f17 - INFO - extract_tools.py:174 - start_extract() - start_extract::{}
+2020-02-06 23:15:55,138+0800 - None - 4c022b88-766e-4b88-b5df-afde81949f17 - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "down" method end, next direction: "down"
+2020-02-06 23:15:55,138+0800 - None - 4c022b88-766e-4b88-b5df-afde81949f17 - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "up" method start
+2020-02-06 23:15:55,138+0800 - None - 4c022b88-766e-4b88-b5df-afde81949f17 - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "up" method end, next direction: "up"
+2020-02-06 23:15:55,138+0800 - None - 4c022b88-766e-4b88-b5df-afde81949f17 - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "up" method start
+2020-02-06 23:15:55,138+0800 - None - 4c022b88-766e-4b88-b5df-afde81949f17 - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "up" method end, next direction: "up"
+2020-02-06 23:15:55,140+0800 - None - 4c022b88-766e-4b88-b5df-afde81949f17 - ERROR - dg_logging.py:186 - _exception() - 'scripts_results'	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 66, in post        self.predict(doctype, content, rich_content)      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 44, in predict        'result': output['scripts_results'],    KeyError: 'scripts_results'    
+2020-02-06 23:15:55,140+0800 - None - 4c022b88-766e-4b88-b5df-afde81949f17 - INFO - predict_handlers.py:74 - post() - results: {"status": "ERROR", "msg": "'scripts_results'"}, cost time: 0.017348051071166992s
+2020-02-06 23:16:35,249+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:16:35,250+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:16:35,878+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:16:35,881+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:16:35,881+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:16:35,898+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:16:35,898+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:16:35,898+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:16:35,898+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:16:35,898+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:16:35,902+0800 - None - None - INFO - server.py:76 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:16:37,524+0800 - None - 82905a44-5f81-4afa-95a5-f96080611371 - INFO - predict_handlers.py:33 - predict() - start to run online workflow
+2020-02-06 23:16:37,525+0800 - None - 82905a44-5f81-4afa-95a5-f96080611371 - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "down" method start
+2020-02-06 23:16:37,528+0800 - None - 82905a44-5f81-4afa-95a5-f96080611371 - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "down" method end, next direction: "down"
+2020-02-06 23:16:37,528+0800 - None - 82905a44-5f81-4afa-95a5-f96080611371 - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "down" method start
+2020-02-06 23:16:37,529+0800 - None - 82905a44-5f81-4afa-95a5-f96080611371 - INFO - extract_tools.py:28 - extract_approval_opinion() - each信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度
+2020-02-06 23:16:37,529+0800 - None - 82905a44-5f81-4afa-95a5-f96080611371 - INFO - extract_tools.py:29 - extract_approval_opinion() - eachtype<class 'str'>
+2020-02-06 23:16:37,531+0800 - None - 82905a44-5f81-4afa-95a5-f96080611371 - ERROR - extract_tools.py:155 - start_extract() - 抽取审批意见报错
+2020-02-06 23:16:37,531+0800 - None - 82905a44-5f81-4afa-95a5-f96080611371 - ERROR - extract_tools.py:156 - start_extract() - No connection adapters were found for '{'text': '信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度'}'
+2020-02-06 23:16:37,531+0800 - None - 82905a44-5f81-4afa-95a5-f96080611371 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:1、取得总行授信批复；2、发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；3、在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；4、发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:16:37,532+0800 - None - 82905a44-5f81-4afa-95a5-f96080611371 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:取得总行授信批复；
+2020-02-06 23:16:37,532+0800 - None - 82905a44-5f81-4afa-95a5-f96080611371 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；
+2020-02-06 23:16:37,532+0800 - None - 82905a44-5f81-4afa-95a5-f96080611371 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；
+2020-02-06 23:16:37,532+0800 - None - 82905a44-5f81-4afa-95a5-f96080611371 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:16:37,533+0800 - None - 82905a44-5f81-4afa-95a5-f96080611371 - ERROR - extract_tools.py:163 - start_extract() - 抽取前提条件报错
+2020-02-06 23:16:37,536+0800 - None - 82905a44-5f81-4afa-95a5-f96080611371 - ERROR - extract_tools.py:164 - start_extract() - No connection adapters were found for '{'text': '取得总行授信批复'}'Traceback (most recent call last):
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/common/extract_tools.py", line 160, in start_extract
+    items2 = extract_preconditions(prerequisite, model_dir) if prerequisite else {}
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/common/extract_tools.py", line 66, in extract_preconditions
+    field_id, prob = extract(tk_content, model_dir)
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/common/extract_tools.py", line 190, in extract
+    requests.post(text_dict)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 640, in send
+    adapter = self.get_adapter(url=request.url)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 731, in get_adapter
+    raise InvalidSchema("No connection adapters were found for '%s'" % url)
+requests.exceptions.InvalidSchema: No connection adapters were found for '{'text': '取得总行授信批复'}'
+
+2020-02-06 23:16:37,537+0800 - None - 82905a44-5f81-4afa-95a5-f96080611371 - ERROR - extract_tools.py:171 - start_extract() - 抽取管理要求报错
+2020-02-06 23:16:37,537+0800 - None - 82905a44-5f81-4afa-95a5-f96080611371 - ERROR - extract_tools.py:172 - start_extract() - No connection adapters were found for '{'text': '1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销'}'
+2020-02-06 23:16:37,537+0800 - None - 82905a44-5f81-4afa-95a5-f96080611371 - INFO - extract_tools.py:174 - start_extract() - start_extract::{}
+2020-02-06 23:16:37,537+0800 - None - 82905a44-5f81-4afa-95a5-f96080611371 - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "down" method end, next direction: "down"
+2020-02-06 23:16:37,537+0800 - None - 82905a44-5f81-4afa-95a5-f96080611371 - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "up" method start
+2020-02-06 23:16:37,537+0800 - None - 82905a44-5f81-4afa-95a5-f96080611371 - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "up" method end, next direction: "up"
+2020-02-06 23:16:37,537+0800 - None - 82905a44-5f81-4afa-95a5-f96080611371 - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "up" method start
+2020-02-06 23:16:37,537+0800 - None - 82905a44-5f81-4afa-95a5-f96080611371 - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "up" method end, next direction: "up"
+2020-02-06 23:16:37,538+0800 - None - 82905a44-5f81-4afa-95a5-f96080611371 - ERROR - dg_logging.py:186 - _exception() - 'scripts_results'	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 67, in post        result.update(self.predict(doctype, content, rich_content))      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 44, in predict        'result': output['scripts_results'],    KeyError: 'scripts_results'    
+2020-02-06 23:16:37,538+0800 - None - 82905a44-5f81-4afa-95a5-f96080611371 - INFO - predict_handlers.py:74 - post() - results: {"status": "ERROR", "msg": "'scripts_results'"}, cost time: 0.013659954071044922s
+2020-02-06 23:19:33,471+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:19:33,472+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:19:34,206+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:19:34,216+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:19:34,219+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:19:34,240+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:19:34,240+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:19:34,240+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:19:34,240+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:19:34,240+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:19:34,244+0800 - None - None - INFO - server.py:76 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:19:37,830+0800 - None - 50465169-2d57-4905-9f67-596f322f7115 - INFO - predict_handlers.py:33 - predict() - start to run online workflow
+2020-02-06 23:19:37,831+0800 - None - 50465169-2d57-4905-9f67-596f322f7115 - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "down" method start
+2020-02-06 23:19:37,837+0800 - None - 50465169-2d57-4905-9f67-596f322f7115 - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "down" method end, next direction: "down"
+2020-02-06 23:19:37,837+0800 - None - 50465169-2d57-4905-9f67-596f322f7115 - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "down" method start
+2020-02-06 23:19:37,837+0800 - None - 50465169-2d57-4905-9f67-596f322f7115 - INFO - extract_tools.py:28 - extract_approval_opinion() - each信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度
+2020-02-06 23:19:37,837+0800 - None - 50465169-2d57-4905-9f67-596f322f7115 - INFO - extract_tools.py:29 - extract_approval_opinion() - eachtype<class 'str'>
+2020-02-06 23:19:37,843+0800 - None - 50465169-2d57-4905-9f67-596f322f7115 - ERROR - extract_tools.py:155 - start_extract() - 抽取审批意见报错
+2020-02-06 23:19:37,843+0800 - None - 50465169-2d57-4905-9f67-596f322f7115 - ERROR - extract_tools.py:156 - start_extract() - No connection adapters were found for '{'text': '信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度'}'
+2020-02-06 23:19:37,843+0800 - None - 50465169-2d57-4905-9f67-596f322f7115 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:1、取得总行授信批复；2、发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；3、在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；4、发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:19:37,844+0800 - None - 50465169-2d57-4905-9f67-596f322f7115 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:取得总行授信批复；
+2020-02-06 23:19:37,844+0800 - None - 50465169-2d57-4905-9f67-596f322f7115 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；
+2020-02-06 23:19:37,844+0800 - None - 50465169-2d57-4905-9f67-596f322f7115 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；
+2020-02-06 23:19:37,845+0800 - None - 50465169-2d57-4905-9f67-596f322f7115 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:19:37,845+0800 - None - 50465169-2d57-4905-9f67-596f322f7115 - ERROR - extract_tools.py:163 - start_extract() - 抽取前提条件报错
+2020-02-06 23:19:37,850+0800 - None - 50465169-2d57-4905-9f67-596f322f7115 - ERROR - extract_tools.py:164 - start_extract() - No connection adapters were found for '{'text': '取得总行授信批复'}'Traceback (most recent call last):
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/common/extract_tools.py", line 160, in start_extract
+    items2 = extract_preconditions(prerequisite, model_dir) if prerequisite else {}
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/common/extract_tools.py", line 66, in extract_preconditions
+    field_id, prob = extract(tk_content, model_dir)
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/common/extract_tools.py", line 190, in extract
+    requests.post(text_dict)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 640, in send
+    adapter = self.get_adapter(url=request.url)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 731, in get_adapter
+    raise InvalidSchema("No connection adapters were found for '%s'" % url)
+requests.exceptions.InvalidSchema: No connection adapters were found for '{'text': '取得总行授信批复'}'
+
+2020-02-06 23:19:37,851+0800 - None - 50465169-2d57-4905-9f67-596f322f7115 - ERROR - extract_tools.py:171 - start_extract() - 抽取管理要求报错
+2020-02-06 23:19:37,851+0800 - None - 50465169-2d57-4905-9f67-596f322f7115 - ERROR - extract_tools.py:172 - start_extract() - No connection adapters were found for '{'text': '1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销'}'
+2020-02-06 23:19:37,851+0800 - None - 50465169-2d57-4905-9f67-596f322f7115 - INFO - extract_tools.py:174 - start_extract() - start_extract::{}
+2020-02-06 23:19:37,851+0800 - None - 50465169-2d57-4905-9f67-596f322f7115 - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "down" method end, next direction: "down"
+2020-02-06 23:19:37,851+0800 - None - 50465169-2d57-4905-9f67-596f322f7115 - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "up" method start
+2020-02-06 23:19:37,851+0800 - None - 50465169-2d57-4905-9f67-596f322f7115 - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "up" method end, next direction: "up"
+2020-02-06 23:19:37,852+0800 - None - 50465169-2d57-4905-9f67-596f322f7115 - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "up" method start
+2020-02-06 23:19:37,852+0800 - None - 50465169-2d57-4905-9f67-596f322f7115 - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "up" method end, next direction: "up"
+2020-02-06 23:19:37,853+0800 - None - 50465169-2d57-4905-9f67-596f322f7115 - ERROR - dg_logging.py:186 - _exception() - 'scripts_results'	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 67, in post        result.update(self.predict(doctype, content, rich_content))      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 44, in predict        'result': output['scripts_results'],    KeyError: 'scripts_results'    
+2020-02-06 23:19:37,853+0800 - None - 50465169-2d57-4905-9f67-596f322f7115 - INFO - predict_handlers.py:74 - post() - results: {"status": "ERROR", "msg": "'scripts_results'"}, cost time: 0.023262977600097656s
+2020-02-06 23:21:00,408+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:21:00,409+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:21:01,225+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:21:01,230+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:21:01,235+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:21:01,249+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:21:01,249+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:21:01,249+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:21:01,249+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:21:01,249+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:21:01,252+0800 - None - None - INFO - server.py:76 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:21:03,369+0800 - None - a28d2341-47b6-4474-b359-b4dce35bb88d - INFO - predict_handlers.py:33 - predict() - start to run online workflow
+2020-02-06 23:21:03,369+0800 - None - a28d2341-47b6-4474-b359-b4dce35bb88d - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "down" method start
+2020-02-06 23:21:03,373+0800 - None - a28d2341-47b6-4474-b359-b4dce35bb88d - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "down" method end, next direction: "down"
+2020-02-06 23:21:03,373+0800 - None - a28d2341-47b6-4474-b359-b4dce35bb88d - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "down" method start
+2020-02-06 23:21:03,373+0800 - None - a28d2341-47b6-4474-b359-b4dce35bb88d - INFO - extract_tools.py:28 - extract_approval_opinion() - each信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度
+2020-02-06 23:21:03,373+0800 - None - a28d2341-47b6-4474-b359-b4dce35bb88d - INFO - extract_tools.py:29 - extract_approval_opinion() - eachtype<class 'str'>
+2020-02-06 23:21:03,377+0800 - None - a28d2341-47b6-4474-b359-b4dce35bb88d - ERROR - extract_tools.py:155 - start_extract() - 抽取审批意见报错
+2020-02-06 23:21:03,378+0800 - None - a28d2341-47b6-4474-b359-b4dce35bb88d - ERROR - extract_tools.py:156 - start_extract() - No connection adapters were found for '{'text': '信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度'}'
+2020-02-06 23:21:03,379+0800 - None - a28d2341-47b6-4474-b359-b4dce35bb88d - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:1、取得总行授信批复；2、发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；3、在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；4、发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:21:03,380+0800 - None - a28d2341-47b6-4474-b359-b4dce35bb88d - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:取得总行授信批复；
+2020-02-06 23:21:03,382+0800 - None - a28d2341-47b6-4474-b359-b4dce35bb88d - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；
+2020-02-06 23:21:03,382+0800 - None - a28d2341-47b6-4474-b359-b4dce35bb88d - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；
+2020-02-06 23:21:03,382+0800 - None - a28d2341-47b6-4474-b359-b4dce35bb88d - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:21:03,383+0800 - None - a28d2341-47b6-4474-b359-b4dce35bb88d - ERROR - extract_tools.py:163 - start_extract() - 抽取前提条件报错
+2020-02-06 23:21:03,386+0800 - None - a28d2341-47b6-4474-b359-b4dce35bb88d - ERROR - extract_tools.py:164 - start_extract() - No connection adapters were found for '{'text': '取得总行授信批复'}'Traceback (most recent call last):
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/common/extract_tools.py", line 160, in start_extract
+    items2 = extract_preconditions(prerequisite, model_dir) if prerequisite else {}
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/common/extract_tools.py", line 66, in extract_preconditions
+    field_id, prob = extract(tk_content, model_dir)
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/common/extract_tools.py", line 190, in extract
+    requests.post(text_dict)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 640, in send
+    adapter = self.get_adapter(url=request.url)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 731, in get_adapter
+    raise InvalidSchema("No connection adapters were found for '%s'" % url)
+requests.exceptions.InvalidSchema: No connection adapters were found for '{'text': '取得总行授信批复'}'
+
+2020-02-06 23:21:03,387+0800 - None - a28d2341-47b6-4474-b359-b4dce35bb88d - ERROR - extract_tools.py:171 - start_extract() - 抽取管理要求报错
+2020-02-06 23:21:03,388+0800 - None - a28d2341-47b6-4474-b359-b4dce35bb88d - ERROR - extract_tools.py:172 - start_extract() - No connection adapters were found for '{'text': '1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销'}'
+2020-02-06 23:21:03,388+0800 - None - a28d2341-47b6-4474-b359-b4dce35bb88d - INFO - extract_tools.py:174 - start_extract() - start_extract::{}
+2020-02-06 23:21:03,388+0800 - None - a28d2341-47b6-4474-b359-b4dce35bb88d - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "down" method end, next direction: "down"
+2020-02-06 23:21:03,388+0800 - None - a28d2341-47b6-4474-b359-b4dce35bb88d - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "up" method start
+2020-02-06 23:21:03,388+0800 - None - a28d2341-47b6-4474-b359-b4dce35bb88d - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "up" method end, next direction: "up"
+2020-02-06 23:21:03,388+0800 - None - a28d2341-47b6-4474-b359-b4dce35bb88d - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "up" method start
+2020-02-06 23:21:03,388+0800 - None - a28d2341-47b6-4474-b359-b4dce35bb88d - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "up" method end, next direction: "up"
+2020-02-06 23:21:03,389+0800 - None - a28d2341-47b6-4474-b359-b4dce35bb88d - ERROR - dg_logging.py:186 - _exception() - 'scripts_results'	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 67, in post        result.update(self.predict(doctype, content, rich_content))      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 44, in predict        'result': output['scripts_results'],    KeyError: 'scripts_results'    
+2020-02-06 23:21:03,389+0800 - None - a28d2341-47b6-4474-b359-b4dce35bb88d - INFO - predict_handlers.py:74 - post() - results: {"status": "ERROR", "msg": "'scripts_results'"}, cost time: 0.019958972930908203s
+2020-02-06 23:23:18,956+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:23:18,957+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:23:19,739+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:23:19,749+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:23:19,750+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:23:19,765+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:23:19,765+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:23:19,765+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:23:19,765+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:23:19,765+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:23:19,768+0800 - None - None - INFO - server.py:76 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:23:24,329+0800 - None - d6ab6c47-4058-4209-b62c-4845303f8a0e - INFO - predict_handlers.py:33 - predict() - start to run online workflow
+2020-02-06 23:23:24,330+0800 - None - d6ab6c47-4058-4209-b62c-4845303f8a0e - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "down" method start
+2020-02-06 23:23:24,334+0800 - None - d6ab6c47-4058-4209-b62c-4845303f8a0e - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "down" method end, next direction: "down"
+2020-02-06 23:23:24,334+0800 - None - d6ab6c47-4058-4209-b62c-4845303f8a0e - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "down" method start
+2020-02-06 23:23:24,335+0800 - None - d6ab6c47-4058-4209-b62c-4845303f8a0e - INFO - extract_tools.py:28 - extract_approval_opinion() - each信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度
+2020-02-06 23:23:24,335+0800 - None - d6ab6c47-4058-4209-b62c-4845303f8a0e - INFO - extract_tools.py:29 - extract_approval_opinion() - eachtype<class 'str'>
+2020-02-06 23:23:24,343+0800 - None - d6ab6c47-4058-4209-b62c-4845303f8a0e - ERROR - extract_tools.py:156 - start_extract() - 抽取审批意见报错
+2020-02-06 23:23:24,343+0800 - None - d6ab6c47-4058-4209-b62c-4845303f8a0e - ERROR - extract_tools.py:157 - start_extract() - No connection adapters were found for '{'text': '信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度'}'
+2020-02-06 23:23:24,344+0800 - None - d6ab6c47-4058-4209-b62c-4845303f8a0e - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:1、取得总行授信批复；2、发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；3、在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；4、发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:23:24,344+0800 - None - d6ab6c47-4058-4209-b62c-4845303f8a0e - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:取得总行授信批复；
+2020-02-06 23:23:24,345+0800 - None - d6ab6c47-4058-4209-b62c-4845303f8a0e - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；
+2020-02-06 23:23:24,345+0800 - None - d6ab6c47-4058-4209-b62c-4845303f8a0e - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；
+2020-02-06 23:23:24,345+0800 - None - d6ab6c47-4058-4209-b62c-4845303f8a0e - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:23:24,345+0800 - None - d6ab6c47-4058-4209-b62c-4845303f8a0e - ERROR - extract_tools.py:164 - start_extract() - 抽取前提条件报错
+2020-02-06 23:23:24,348+0800 - None - d6ab6c47-4058-4209-b62c-4845303f8a0e - ERROR - extract_tools.py:165 - start_extract() - No connection adapters were found for '{'text': '取得总行授信批复'}'Traceback (most recent call last):
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/common/extract_tools.py", line 161, in start_extract
+    items2 = extract_preconditions(prerequisite, model_dir) if prerequisite else {}
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/common/extract_tools.py", line 66, in extract_preconditions
+    field_id, prob = extract(tk_content, model_dir)
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/common/extract_tools.py", line 191, in extract
+    requests.post(text_dict)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 640, in send
+    adapter = self.get_adapter(url=request.url)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 731, in get_adapter
+    raise InvalidSchema("No connection adapters were found for '%s'" % url)
+requests.exceptions.InvalidSchema: No connection adapters were found for '{'text': '取得总行授信批复'}'
+
+2020-02-06 23:23:24,349+0800 - None - d6ab6c47-4058-4209-b62c-4845303f8a0e - ERROR - extract_tools.py:172 - start_extract() - 抽取管理要求报错
+2020-02-06 23:23:24,349+0800 - None - d6ab6c47-4058-4209-b62c-4845303f8a0e - ERROR - extract_tools.py:173 - start_extract() - No connection adapters were found for '{'text': '1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销'}'
+2020-02-06 23:23:24,349+0800 - None - d6ab6c47-4058-4209-b62c-4845303f8a0e - INFO - extract_tools.py:175 - start_extract() - start_extract::{}
+2020-02-06 23:23:24,349+0800 - None - d6ab6c47-4058-4209-b62c-4845303f8a0e - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "down" method end, next direction: "down"
+2020-02-06 23:23:24,349+0800 - None - d6ab6c47-4058-4209-b62c-4845303f8a0e - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "up" method start
+2020-02-06 23:23:24,349+0800 - None - d6ab6c47-4058-4209-b62c-4845303f8a0e - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "up" method end, next direction: "up"
+2020-02-06 23:23:24,349+0800 - None - d6ab6c47-4058-4209-b62c-4845303f8a0e - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "up" method start
+2020-02-06 23:23:24,349+0800 - None - d6ab6c47-4058-4209-b62c-4845303f8a0e - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "up" method end, next direction: "up"
+2020-02-06 23:23:24,350+0800 - None - d6ab6c47-4058-4209-b62c-4845303f8a0e - ERROR - dg_logging.py:186 - _exception() - 'scripts_results'	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 67, in post        result.update(self.predict(doctype, content, rich_content))      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 44, in predict        'result': output['scripts_results'],    KeyError: 'scripts_results'    
+2020-02-06 23:23:24,351+0800 - None - d6ab6c47-4058-4209-b62c-4845303f8a0e - INFO - predict_handlers.py:74 - post() - results: {"status": "ERROR", "msg": "'scripts_results'"}, cost time: 0.022867202758789062s
+2020-02-06 23:25:55,594+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:25:55,596+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:25:56,367+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:25:56,373+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:25:56,374+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:25:56,388+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:25:56,388+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:25:56,388+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:25:56,388+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:25:56,388+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:25:56,391+0800 - None - None - INFO - server.py:76 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:26:03,231+0800 - None - 518c7e81-c06b-4e8d-b8e5-fa945a8c34b2 - INFO - predict_handlers.py:33 - predict() - start to run online workflow
+2020-02-06 23:26:03,232+0800 - None - 518c7e81-c06b-4e8d-b8e5-fa945a8c34b2 - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "down" method start
+2020-02-06 23:26:03,238+0800 - None - 518c7e81-c06b-4e8d-b8e5-fa945a8c34b2 - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "down" method end, next direction: "down"
+2020-02-06 23:26:03,238+0800 - None - 518c7e81-c06b-4e8d-b8e5-fa945a8c34b2 - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "down" method start
+2020-02-06 23:26:03,238+0800 - None - 518c7e81-c06b-4e8d-b8e5-fa945a8c34b2 - INFO - extract_tools.py:29 - extract_approval_opinion() - each信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度
+2020-02-06 23:26:03,239+0800 - None - 518c7e81-c06b-4e8d-b8e5-fa945a8c34b2 - INFO - extract_tools.py:30 - extract_approval_opinion() - eachtype<class 'str'>
+2020-02-06 23:26:03,246+0800 - None - 518c7e81-c06b-4e8d-b8e5-fa945a8c34b2 - ERROR - extract_tools.py:157 - start_extract() - 抽取审批意见报错
+2020-02-06 23:26:03,246+0800 - None - 518c7e81-c06b-4e8d-b8e5-fa945a8c34b2 - ERROR - extract_tools.py:158 - start_extract() - No connection adapters were found for '{'text': '信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度'}'
+2020-02-06 23:26:03,246+0800 - None - 518c7e81-c06b-4e8d-b8e5-fa945a8c34b2 - INFO - extract_tools.py:118 - cut_prerequisite() - 前提条件文本内容:1、取得总行授信批复；2、发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；3、在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；4、发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:26:03,247+0800 - None - 518c7e81-c06b-4e8d-b8e5-fa945a8c34b2 - INFO - extract_tools.py:118 - cut_prerequisite() - 前提条件文本内容:取得总行授信批复；
+2020-02-06 23:26:03,247+0800 - None - 518c7e81-c06b-4e8d-b8e5-fa945a8c34b2 - INFO - extract_tools.py:118 - cut_prerequisite() - 前提条件文本内容:发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；
+2020-02-06 23:26:03,247+0800 - None - 518c7e81-c06b-4e8d-b8e5-fa945a8c34b2 - INFO - extract_tools.py:118 - cut_prerequisite() - 前提条件文本内容:在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；
+2020-02-06 23:26:03,247+0800 - None - 518c7e81-c06b-4e8d-b8e5-fa945a8c34b2 - INFO - extract_tools.py:118 - cut_prerequisite() - 前提条件文本内容:发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:26:03,248+0800 - None - 518c7e81-c06b-4e8d-b8e5-fa945a8c34b2 - ERROR - extract_tools.py:165 - start_extract() - 抽取前提条件报错
+2020-02-06 23:26:03,252+0800 - None - 518c7e81-c06b-4e8d-b8e5-fa945a8c34b2 - ERROR - extract_tools.py:166 - start_extract() - No connection adapters were found for '{'text': '取得总行授信批复'}'Traceback (most recent call last):
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/common/extract_tools.py", line 162, in start_extract
+    items2 = extract_preconditions(prerequisite, model_dir) if prerequisite else {}
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/common/extract_tools.py", line 67, in extract_preconditions
+    field_id, prob = extract(tk_content, model_dir)
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/common/extract_tools.py", line 192, in extract
+    requests.post(text_dict)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 640, in send
+    adapter = self.get_adapter(url=request.url)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 731, in get_adapter
+    raise InvalidSchema("No connection adapters were found for '%s'" % url)
+requests.exceptions.InvalidSchema: No connection adapters were found for '{'text': '取得总行授信批复'}'
+
+2020-02-06 23:26:03,253+0800 - None - 518c7e81-c06b-4e8d-b8e5-fa945a8c34b2 - ERROR - extract_tools.py:173 - start_extract() - 抽取管理要求报错
+2020-02-06 23:26:03,253+0800 - None - 518c7e81-c06b-4e8d-b8e5-fa945a8c34b2 - ERROR - extract_tools.py:174 - start_extract() - No connection adapters were found for '{'text': '1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销'}'
+2020-02-06 23:26:03,253+0800 - None - 518c7e81-c06b-4e8d-b8e5-fa945a8c34b2 - INFO - extract_tools.py:176 - start_extract() - start_extract::{}
+2020-02-06 23:26:03,253+0800 - None - 518c7e81-c06b-4e8d-b8e5-fa945a8c34b2 - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "down" method end, next direction: "down"
+2020-02-06 23:26:03,253+0800 - None - 518c7e81-c06b-4e8d-b8e5-fa945a8c34b2 - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "up" method start
+2020-02-06 23:26:03,253+0800 - None - 518c7e81-c06b-4e8d-b8e5-fa945a8c34b2 - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "up" method end, next direction: "up"
+2020-02-06 23:26:03,253+0800 - None - 518c7e81-c06b-4e8d-b8e5-fa945a8c34b2 - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "up" method start
+2020-02-06 23:26:03,253+0800 - None - 518c7e81-c06b-4e8d-b8e5-fa945a8c34b2 - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "up" method end, next direction: "up"
+2020-02-06 23:26:03,254+0800 - None - 518c7e81-c06b-4e8d-b8e5-fa945a8c34b2 - ERROR - dg_logging.py:186 - _exception() - 'scripts_results'	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 67, in post        result.update(self.predict(doctype, content, rich_content))      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 44, in predict        'result': output['scripts_results'],    KeyError: 'scripts_results'    
+2020-02-06 23:26:03,255+0800 - None - 518c7e81-c06b-4e8d-b8e5-fa945a8c34b2 - INFO - predict_handlers.py:74 - post() - results: {"status": "ERROR", "msg": "'scripts_results'"}, cost time: 0.02565622329711914s
+2020-02-06 23:26:37,882+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:26:37,883+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:26:38,585+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:26:38,590+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:26:38,591+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:26:38,605+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:26:38,605+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:26:38,605+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:26:38,605+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:26:38,606+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:26:38,608+0800 - None - None - INFO - server.py:76 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:26:42,160+0800 - None - ae02db92-a21e-433c-8c34-502f9bf81ee6 - INFO - predict_handlers.py:33 - predict() - start to run online workflow
+2020-02-06 23:26:42,160+0800 - None - ae02db92-a21e-433c-8c34-502f9bf81ee6 - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "down" method start
+2020-02-06 23:26:42,164+0800 - None - ae02db92-a21e-433c-8c34-502f9bf81ee6 - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "down" method end, next direction: "down"
+2020-02-06 23:26:42,164+0800 - None - ae02db92-a21e-433c-8c34-502f9bf81ee6 - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "down" method start
+2020-02-06 23:26:42,164+0800 - None - ae02db92-a21e-433c-8c34-502f9bf81ee6 - INFO - extract_tools.py:30 - extract_approval_opinion() - each信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度
+2020-02-06 23:26:42,165+0800 - None - ae02db92-a21e-433c-8c34-502f9bf81ee6 - INFO - extract_tools.py:31 - extract_approval_opinion() - eachtype<class 'str'>
+2020-02-06 23:26:42,167+0800 - None - ae02db92-a21e-433c-8c34-502f9bf81ee6 - ERROR - extract_tools.py:158 - start_extract() - 抽取审批意见报错
+2020-02-06 23:26:42,167+0800 - None - ae02db92-a21e-433c-8c34-502f9bf81ee6 - ERROR - extract_tools.py:159 - start_extract() - No connection adapters were found for '{'text': '信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度'}'
+2020-02-06 23:26:42,168+0800 - None - ae02db92-a21e-433c-8c34-502f9bf81ee6 - INFO - extract_tools.py:119 - cut_prerequisite() - 前提条件文本内容:1、取得总行授信批复；2、发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；3、在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；4、发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:26:42,168+0800 - None - ae02db92-a21e-433c-8c34-502f9bf81ee6 - INFO - extract_tools.py:119 - cut_prerequisite() - 前提条件文本内容:取得总行授信批复；
+2020-02-06 23:26:42,168+0800 - None - ae02db92-a21e-433c-8c34-502f9bf81ee6 - INFO - extract_tools.py:119 - cut_prerequisite() - 前提条件文本内容:发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；
+2020-02-06 23:26:42,169+0800 - None - ae02db92-a21e-433c-8c34-502f9bf81ee6 - INFO - extract_tools.py:119 - cut_prerequisite() - 前提条件文本内容:在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；
+2020-02-06 23:26:42,169+0800 - None - ae02db92-a21e-433c-8c34-502f9bf81ee6 - INFO - extract_tools.py:119 - cut_prerequisite() - 前提条件文本内容:发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:26:42,169+0800 - None - ae02db92-a21e-433c-8c34-502f9bf81ee6 - ERROR - extract_tools.py:166 - start_extract() - 抽取前提条件报错
+2020-02-06 23:26:42,172+0800 - None - ae02db92-a21e-433c-8c34-502f9bf81ee6 - ERROR - extract_tools.py:167 - start_extract() - No connection adapters were found for '{'text': '取得总行授信批复'}'Traceback (most recent call last):
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/common/extract_tools.py", line 163, in start_extract
+    items2 = extract_preconditions(prerequisite, model_dir) if prerequisite else {}
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/common/extract_tools.py", line 68, in extract_preconditions
+    field_id, prob = extract(tk_content, model_dir)
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/common/extract_tools.py", line 193, in extract
+    requests.post(text_dict)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 640, in send
+    adapter = self.get_adapter(url=request.url)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 731, in get_adapter
+    raise InvalidSchema("No connection adapters were found for '%s'" % url)
+requests.exceptions.InvalidSchema: No connection adapters were found for '{'text': '取得总行授信批复'}'
+
+2020-02-06 23:26:42,173+0800 - None - ae02db92-a21e-433c-8c34-502f9bf81ee6 - ERROR - extract_tools.py:174 - start_extract() - 抽取管理要求报错
+2020-02-06 23:26:42,173+0800 - None - ae02db92-a21e-433c-8c34-502f9bf81ee6 - ERROR - extract_tools.py:175 - start_extract() - No connection adapters were found for '{'text': '1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销'}'
+2020-02-06 23:26:42,173+0800 - None - ae02db92-a21e-433c-8c34-502f9bf81ee6 - INFO - extract_tools.py:177 - start_extract() - start_extract::{}
+2020-02-06 23:26:42,173+0800 - None - ae02db92-a21e-433c-8c34-502f9bf81ee6 - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "down" method end, next direction: "down"
+2020-02-06 23:26:42,173+0800 - None - ae02db92-a21e-433c-8c34-502f9bf81ee6 - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "up" method start
+2020-02-06 23:26:42,173+0800 - None - ae02db92-a21e-433c-8c34-502f9bf81ee6 - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "up" method end, next direction: "up"
+2020-02-06 23:26:42,174+0800 - None - ae02db92-a21e-433c-8c34-502f9bf81ee6 - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "up" method start
+2020-02-06 23:26:42,174+0800 - None - ae02db92-a21e-433c-8c34-502f9bf81ee6 - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "up" method end, next direction: "up"
+2020-02-06 23:26:42,175+0800 - None - ae02db92-a21e-433c-8c34-502f9bf81ee6 - ERROR - dg_logging.py:186 - _exception() - 'scripts_results'	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 67, in post        result.update(self.predict(doctype, content, rich_content))      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 44, in predict        'result': output['scripts_results'],    KeyError: 'scripts_results'    
+2020-02-06 23:26:42,176+0800 - None - ae02db92-a21e-433c-8c34-502f9bf81ee6 - INFO - predict_handlers.py:74 - post() - results: {"status": "ERROR", "msg": "'scripts_results'"}, cost time: 0.015860795974731445s
+2020-02-06 23:27:45,666+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:27:45,667+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:27:46,430+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:27:46,435+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:27:46,436+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:27:46,450+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:27:46,450+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:27:46,450+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:27:46,450+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:27:46,450+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:27:46,453+0800 - None - None - INFO - server.py:76 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:27:50,027+0800 - None - e143ab78-5181-4b11-85a2-bad2080dc3d4 - INFO - predict_handlers.py:33 - predict() - start to run online workflow
+2020-02-06 23:27:50,028+0800 - None - e143ab78-5181-4b11-85a2-bad2080dc3d4 - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "down" method start
+2020-02-06 23:27:50,033+0800 - None - e143ab78-5181-4b11-85a2-bad2080dc3d4 - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "down" method end, next direction: "down"
+2020-02-06 23:27:50,033+0800 - None - e143ab78-5181-4b11-85a2-bad2080dc3d4 - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "down" method start
+2020-02-06 23:27:50,037+0800 - None - e143ab78-5181-4b11-85a2-bad2080dc3d4 - ERROR - extract_tools.py:156 - start_extract() - 抽取审批意见报错
+2020-02-06 23:27:50,038+0800 - None - e143ab78-5181-4b11-85a2-bad2080dc3d4 - ERROR - extract_tools.py:157 - start_extract() - No connection adapters were found for '{'text': '信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度'}'
+2020-02-06 23:27:50,038+0800 - None - e143ab78-5181-4b11-85a2-bad2080dc3d4 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:1、取得总行授信批复；2、发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；3、在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；4、发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:27:50,038+0800 - None - e143ab78-5181-4b11-85a2-bad2080dc3d4 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:取得总行授信批复；
+2020-02-06 23:27:50,039+0800 - None - e143ab78-5181-4b11-85a2-bad2080dc3d4 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；
+2020-02-06 23:27:50,039+0800 - None - e143ab78-5181-4b11-85a2-bad2080dc3d4 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；
+2020-02-06 23:27:50,039+0800 - None - e143ab78-5181-4b11-85a2-bad2080dc3d4 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:27:50,040+0800 - None - e143ab78-5181-4b11-85a2-bad2080dc3d4 - ERROR - extract_tools.py:164 - start_extract() - 抽取前提条件报错
+2020-02-06 23:27:50,046+0800 - None - e143ab78-5181-4b11-85a2-bad2080dc3d4 - ERROR - extract_tools.py:165 - start_extract() - No connection adapters were found for '{'text': '取得总行授信批复'}'Traceback (most recent call last):
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/common/extract_tools.py", line 161, in start_extract
+    items2 = extract_preconditions(prerequisite, model_dir) if prerequisite else {}
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/common/extract_tools.py", line 66, in extract_preconditions
+    field_id, prob = extract(tk_content, model_dir)
+  File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/common/extract_tools.py", line 191, in extract
+    requests.post(text_dict)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 640, in send
+    adapter = self.get_adapter(url=request.url)
+  File "/Users/chenxuan/opt/anaconda3/lib/python3.7/site-packages/requests/sessions.py", line 731, in get_adapter
+    raise InvalidSchema("No connection adapters were found for '%s'" % url)
+requests.exceptions.InvalidSchema: No connection adapters were found for '{'text': '取得总行授信批复'}'
+
+2020-02-06 23:27:50,047+0800 - None - e143ab78-5181-4b11-85a2-bad2080dc3d4 - ERROR - extract_tools.py:172 - start_extract() - 抽取管理要求报错
+2020-02-06 23:27:50,047+0800 - None - e143ab78-5181-4b11-85a2-bad2080dc3d4 - ERROR - extract_tools.py:173 - start_extract() - No connection adapters were found for '{'text': '1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销'}'
+2020-02-06 23:27:50,047+0800 - None - e143ab78-5181-4b11-85a2-bad2080dc3d4 - INFO - extract_tools.py:175 - start_extract() - start_extract::{}
+2020-02-06 23:27:50,047+0800 - None - e143ab78-5181-4b11-85a2-bad2080dc3d4 - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "down" method end, next direction: "down"
+2020-02-06 23:27:50,047+0800 - None - e143ab78-5181-4b11-85a2-bad2080dc3d4 - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "up" method start
+2020-02-06 23:27:50,047+0800 - None - e143ab78-5181-4b11-85a2-bad2080dc3d4 - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "up" method end, next direction: "up"
+2020-02-06 23:27:50,048+0800 - None - e143ab78-5181-4b11-85a2-bad2080dc3d4 - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "up" method start
+2020-02-06 23:27:50,048+0800 - None - e143ab78-5181-4b11-85a2-bad2080dc3d4 - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "up" method end, next direction: "up"
+2020-02-06 23:27:50,049+0800 - None - e143ab78-5181-4b11-85a2-bad2080dc3d4 - ERROR - dg_logging.py:186 - _exception() - 'scripts_results'	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 67, in post        result.update(self.predict(doctype, content, rich_content))      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 44, in predict        'result': output['scripts_results'],    KeyError: 'scripts_results'    
+2020-02-06 23:27:50,049+0800 - None - e143ab78-5181-4b11-85a2-bad2080dc3d4 - INFO - predict_handlers.py:74 - post() - results: {"status": "ERROR", "msg": "'scripts_results'"}, cost time: 0.022551774978637695s
+2020-02-06 23:29:40,360+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:29:40,361+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:29:41,134+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:29:41,142+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:29:41,143+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:29:41,157+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:29:41,157+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:29:41,157+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:29:41,157+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:29:41,157+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:29:41,160+0800 - None - None - INFO - server.py:76 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:29:44,378+0800 - None - 37a1f747-addf-4ddc-8271-6e8acb7a6200 - INFO - predict_handlers.py:33 - predict() - start to run online workflow
+2020-02-06 23:29:44,380+0800 - None - 37a1f747-addf-4ddc-8271-6e8acb7a6200 - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "down" method start
+2020-02-06 23:29:44,383+0800 - None - 37a1f747-addf-4ddc-8271-6e8acb7a6200 - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "down" method end, next direction: "down"
+2020-02-06 23:29:44,384+0800 - None - 37a1f747-addf-4ddc-8271-6e8acb7a6200 - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "down" method start
+2020-02-06 23:29:44,384+0800 - None - 37a1f747-addf-4ddc-8271-6e8acb7a6200 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:1、取得总行授信批复；2、发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；3、在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；4、发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:29:44,385+0800 - None - 37a1f747-addf-4ddc-8271-6e8acb7a6200 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:取得总行授信批复；
+2020-02-06 23:29:44,385+0800 - None - 37a1f747-addf-4ddc-8271-6e8acb7a6200 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；
+2020-02-06 23:29:44,385+0800 - None - 37a1f747-addf-4ddc-8271-6e8acb7a6200 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；
+2020-02-06 23:29:44,385+0800 - None - 37a1f747-addf-4ddc-8271-6e8acb7a6200 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:29:44,385+0800 - None - 37a1f747-addf-4ddc-8271-6e8acb7a6200 - INFO - extract_tools.py:71 - extract_preconditions() - extract_preconditions::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377]]}
+2020-02-06 23:29:44,386+0800 - None - 37a1f747-addf-4ddc-8271-6e8acb7a6200 - INFO - extract_tools.py:92 - extract_management_condition() - extract_management_condition::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377], ['1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销', 22, 478], ['2、由分行金融市场务部和支行共同督促发行人严格按照银监会文件要求，通过适当方式对我行尽职调查和审查过程中揭示的发行人面临的兑付风险、信用风险、政策风险及舆情风险等风险因素予以充分披露', 22, 576], ['3、债券存续期间，要加强资金流向监控，确保募集资金用途与披露用途保持一致，并符合相关监管规定，做好动态监测和兑付监督工作', 22, 668], ['要持续关注发行人经营、财务变动情况，如发现若出现内、外评级结果降至AA级以下、不良贷款率连续上升等可能影响债券本息兑付的重大不利影响，要积极采取有效措施防范风险，维护我行市场形象', 22, 729], ['4、指定浦东开发区支行副行长付东攀、公司部副经理丁黄嫣及客户经理薛莉隽为本笔业务管理责任人及直接责任人，前述责任人因岗位变动，其业务管理后续责任由继任者承担', 22, 819]]}
+2020-02-06 23:29:44,386+0800 - None - 37a1f747-addf-4ddc-8271-6e8acb7a6200 - INFO - extract_tools.py:175 - start_extract() - start_extract::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377], ['1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销', 22, 478], ['2、由分行金融市场务部和支行共同督促发行人严格按照银监会文件要求，通过适当方式对我行尽职调查和审查过程中揭示的发行人面临的兑付风险、信用风险、政策风险及舆情风险等风险因素予以充分披露', 22, 576], ['3、债券存续期间，要加强资金流向监控，确保募集资金用途与披露用途保持一致，并符合相关监管规定，做好动态监测和兑付监督工作', 22, 668], ['要持续关注发行人经营、财务变动情况，如发现若出现内、外评级结果降至AA级以下、不良贷款率连续上升等可能影响债券本息兑付的重大不利影响，要积极采取有效措施防范风险，维护我行市场形象', 22, 729], ['4、指定浦东开发区支行副行长付东攀、公司部副经理丁黄嫣及客户经理薛莉隽为本笔业务管理责任人及直接责任人，前述责任人因岗位变动，其业务管理后续责任由继任者承担', 22, 819]]}
+2020-02-06 23:29:44,386+0800 - None - 37a1f747-addf-4ddc-8271-6e8acb7a6200 - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "down" method end, next direction: "down"
+2020-02-06 23:29:44,386+0800 - None - 37a1f747-addf-4ddc-8271-6e8acb7a6200 - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "up" method start
+2020-02-06 23:29:44,386+0800 - None - 37a1f747-addf-4ddc-8271-6e8acb7a6200 - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "up" method end, next direction: "up"
+2020-02-06 23:29:44,386+0800 - None - 37a1f747-addf-4ddc-8271-6e8acb7a6200 - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "up" method start
+2020-02-06 23:29:44,386+0800 - None - 37a1f747-addf-4ddc-8271-6e8acb7a6200 - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "up" method end, next direction: "up"
+2020-02-06 23:29:44,388+0800 - None - 37a1f747-addf-4ddc-8271-6e8acb7a6200 - ERROR - dg_logging.py:186 - _exception() - 'scripts_results'	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 67, in post        result.update(self.predict(doctype, content, rich_content))      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 44, in predict        'result': output['scripts_results'],    KeyError: 'scripts_results'    
+2020-02-06 23:29:44,389+0800 - None - 37a1f747-addf-4ddc-8271-6e8acb7a6200 - INFO - predict_handlers.py:74 - post() - results: {"status": "ERROR", "msg": "'scripts_results'"}, cost time: 0.012792825698852539s
+2020-02-06 23:31:53,956+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:31:53,957+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:31:54,622+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:31:54,627+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:31:54,628+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:31:54,639+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:31:54,639+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:31:54,639+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:31:54,640+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:31:54,640+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:31:54,642+0800 - None - None - INFO - server.py:76 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:31:58,842+0800 - None - 637d2adb-389e-4e5d-9717-63b5f2c75f5c - INFO - predict_handlers.py:33 - predict() - start to run online workflow
+2020-02-06 23:31:58,842+0800 - None - 637d2adb-389e-4e5d-9717-63b5f2c75f5c - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "down" method start
+2020-02-06 23:31:58,849+0800 - None - 637d2adb-389e-4e5d-9717-63b5f2c75f5c - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "down" method end, next direction: "down"
+2020-02-06 23:31:58,849+0800 - None - 637d2adb-389e-4e5d-9717-63b5f2c75f5c - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "down" method start
+2020-02-06 23:31:58,850+0800 - None - 637d2adb-389e-4e5d-9717-63b5f2c75f5c - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:1、取得总行授信批复；2、发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；3、在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；4、发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:31:58,850+0800 - None - 637d2adb-389e-4e5d-9717-63b5f2c75f5c - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:取得总行授信批复；
+2020-02-06 23:31:58,851+0800 - None - 637d2adb-389e-4e5d-9717-63b5f2c75f5c - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；
+2020-02-06 23:31:58,851+0800 - None - 637d2adb-389e-4e5d-9717-63b5f2c75f5c - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；
+2020-02-06 23:31:58,851+0800 - None - 637d2adb-389e-4e5d-9717-63b5f2c75f5c - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:31:58,851+0800 - None - 637d2adb-389e-4e5d-9717-63b5f2c75f5c - INFO - extract_tools.py:71 - extract_preconditions() - extract_preconditions::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377]]}
+2020-02-06 23:31:58,851+0800 - None - 637d2adb-389e-4e5d-9717-63b5f2c75f5c - INFO - extract_tools.py:92 - extract_management_condition() - extract_management_condition::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377], ['1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销', 22, 478], ['2、由分行金融市场务部和支行共同督促发行人严格按照银监会文件要求，通过适当方式对我行尽职调查和审查过程中揭示的发行人面临的兑付风险、信用风险、政策风险及舆情风险等风险因素予以充分披露', 22, 576], ['3、债券存续期间，要加强资金流向监控，确保募集资金用途与披露用途保持一致，并符合相关监管规定，做好动态监测和兑付监督工作', 22, 668], ['要持续关注发行人经营、财务变动情况，如发现若出现内、外评级结果降至AA级以下、不良贷款率连续上升等可能影响债券本息兑付的重大不利影响，要积极采取有效措施防范风险，维护我行市场形象', 22, 729], ['4、指定浦东开发区支行副行长付东攀、公司部副经理丁黄嫣及客户经理薛莉隽为本笔业务管理责任人及直接责任人，前述责任人因岗位变动，其业务管理后续责任由继任者承担', 22, 819]]}
+2020-02-06 23:31:58,852+0800 - None - 637d2adb-389e-4e5d-9717-63b5f2c75f5c - INFO - extract_tools.py:178 - start_extract() - start_extract::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377], ['1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销', 22, 478], ['2、由分行金融市场务部和支行共同督促发行人严格按照银监会文件要求，通过适当方式对我行尽职调查和审查过程中揭示的发行人面临的兑付风险、信用风险、政策风险及舆情风险等风险因素予以充分披露', 22, 576], ['3、债券存续期间，要加强资金流向监控，确保募集资金用途与披露用途保持一致，并符合相关监管规定，做好动态监测和兑付监督工作', 22, 668], ['要持续关注发行人经营、财务变动情况，如发现若出现内、外评级结果降至AA级以下、不良贷款率连续上升等可能影响债券本息兑付的重大不利影响，要积极采取有效措施防范风险，维护我行市场形象', 22, 729], ['4、指定浦东开发区支行副行长付东攀、公司部副经理丁黄嫣及客户经理薛莉隽为本笔业务管理责任人及直接责任人，前述责任人因岗位变动，其业务管理后续责任由继任者承担', 22, 819]]}
+2020-02-06 23:31:58,852+0800 - None - 637d2adb-389e-4e5d-9717-63b5f2c75f5c - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "down" method end, next direction: "down"
+2020-02-06 23:31:58,852+0800 - None - 637d2adb-389e-4e5d-9717-63b5f2c75f5c - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "up" method start
+2020-02-06 23:31:58,852+0800 - None - 637d2adb-389e-4e5d-9717-63b5f2c75f5c - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "up" method end, next direction: "up"
+2020-02-06 23:31:58,852+0800 - None - 637d2adb-389e-4e5d-9717-63b5f2c75f5c - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "up" method start
+2020-02-06 23:31:58,852+0800 - None - 637d2adb-389e-4e5d-9717-63b5f2c75f5c - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "up" method end, next direction: "up"
+2020-02-06 23:31:58,853+0800 - None - 637d2adb-389e-4e5d-9717-63b5f2c75f5c - ERROR - dg_logging.py:186 - _exception() - 'scripts_results'	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 67, in post        result.update(self.predict(doctype, content, rich_content))      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 44, in predict        'result': output['scripts_results'],    KeyError: 'scripts_results'    
+2020-02-06 23:31:58,853+0800 - None - 637d2adb-389e-4e5d-9717-63b5f2c75f5c - INFO - predict_handlers.py:74 - post() - results: {"status": "ERROR", "msg": "'scripts_results'"}, cost time: 0.01173090934753418s
+2020-02-06 23:35:27,546+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:35:27,548+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:35:28,320+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:35:28,326+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:35:28,328+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:35:28,339+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:35:28,339+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:35:28,339+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:35:28,339+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:35:28,339+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:35:28,342+0800 - None - None - INFO - server.py:76 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:35:30,833+0800 - None - 60184d86-bf33-4db5-92ee-131a583592ff - INFO - predict_handlers.py:33 - predict() - start to run online workflow
+2020-02-06 23:35:30,833+0800 - None - 60184d86-bf33-4db5-92ee-131a583592ff - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "down" method start
+2020-02-06 23:35:30,837+0800 - None - 60184d86-bf33-4db5-92ee-131a583592ff - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "down" method end, next direction: "down"
+2020-02-06 23:35:30,837+0800 - None - 60184d86-bf33-4db5-92ee-131a583592ff - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "down" method start
+2020-02-06 23:35:30,838+0800 - None - 60184d86-bf33-4db5-92ee-131a583592ff - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:1、取得总行授信批复；2、发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；3、在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；4、发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:35:30,839+0800 - None - 60184d86-bf33-4db5-92ee-131a583592ff - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:取得总行授信批复；
+2020-02-06 23:35:30,839+0800 - None - 60184d86-bf33-4db5-92ee-131a583592ff - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；
+2020-02-06 23:35:30,839+0800 - None - 60184d86-bf33-4db5-92ee-131a583592ff - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；
+2020-02-06 23:35:30,839+0800 - None - 60184d86-bf33-4db5-92ee-131a583592ff - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:35:30,840+0800 - None - 60184d86-bf33-4db5-92ee-131a583592ff - INFO - extract_tools.py:71 - extract_preconditions() - extract_preconditions::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377]]}
+2020-02-06 23:35:30,840+0800 - None - 60184d86-bf33-4db5-92ee-131a583592ff - INFO - extract_tools.py:92 - extract_management_condition() - extract_management_condition::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377], ['1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销', 22, 478], ['2、由分行金融市场务部和支行共同督促发行人严格按照银监会文件要求，通过适当方式对我行尽职调查和审查过程中揭示的发行人面临的兑付风险、信用风险、政策风险及舆情风险等风险因素予以充分披露', 22, 576], ['3、债券存续期间，要加强资金流向监控，确保募集资金用途与披露用途保持一致，并符合相关监管规定，做好动态监测和兑付监督工作', 22, 668], ['要持续关注发行人经营、财务变动情况，如发现若出现内、外评级结果降至AA级以下、不良贷款率连续上升等可能影响债券本息兑付的重大不利影响，要积极采取有效措施防范风险，维护我行市场形象', 22, 729], ['4、指定浦东开发区支行副行长付东攀、公司部副经理丁黄嫣及客户经理薛莉隽为本笔业务管理责任人及直接责任人，前述责任人因岗位变动，其业务管理后续责任由继任者承担', 22, 819]]}
+2020-02-06 23:35:30,840+0800 - None - 60184d86-bf33-4db5-92ee-131a583592ff - INFO - extract_tools.py:178 - start_extract() - start_extract::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377], ['1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销', 22, 478], ['2、由分行金融市场务部和支行共同督促发行人严格按照银监会文件要求，通过适当方式对我行尽职调查和审查过程中揭示的发行人面临的兑付风险、信用风险、政策风险及舆情风险等风险因素予以充分披露', 22, 576], ['3、债券存续期间，要加强资金流向监控，确保募集资金用途与披露用途保持一致，并符合相关监管规定，做好动态监测和兑付监督工作', 22, 668], ['要持续关注发行人经营、财务变动情况，如发现若出现内、外评级结果降至AA级以下、不良贷款率连续上升等可能影响债券本息兑付的重大不利影响，要积极采取有效措施防范风险，维护我行市场形象', 22, 729], ['4、指定浦东开发区支行副行长付东攀、公司部副经理丁黄嫣及客户经理薛莉隽为本笔业务管理责任人及直接责任人，前述责任人因岗位变动，其业务管理后续责任由继任者承担', 22, 819]]}
+2020-02-06 23:35:30,840+0800 - None - 60184d86-bf33-4db5-92ee-131a583592ff - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "down" method end, next direction: "down"
+2020-02-06 23:35:30,840+0800 - None - 60184d86-bf33-4db5-92ee-131a583592ff - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "up" method start
+2020-02-06 23:35:30,841+0800 - None - 60184d86-bf33-4db5-92ee-131a583592ff - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "up" method end, next direction: "up"
+2020-02-06 23:35:30,841+0800 - None - 60184d86-bf33-4db5-92ee-131a583592ff - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "up" method start
+2020-02-06 23:35:30,841+0800 - None - 60184d86-bf33-4db5-92ee-131a583592ff - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "up" method end, next direction: "up"
+2020-02-06 23:35:30,844+0800 - None - 60184d86-bf33-4db5-92ee-131a583592ff - ERROR - dg_logging.py:186 - _exception() - 'scripts_results'	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 67, in post        result.update(self.predict(doctype, content, rich_content))      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 44, in predict        'result': output['scripts_results'],    KeyError: 'scripts_results'    
+2020-02-06 23:35:30,844+0800 - None - 60184d86-bf33-4db5-92ee-131a583592ff - INFO - predict_handlers.py:74 - post() - results: {"status": "ERROR", "msg": "'scripts_results'"}, cost time: 0.010966062545776367s
+2020-02-06 23:40:56,009+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:40:56,010+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:40:56,773+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:40:56,780+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:40:56,782+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:40:56,796+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:40:56,796+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:40:56,797+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:40:56,797+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:40:56,797+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:40:56,799+0800 - None - None - INFO - server.py:76 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:41:00,344+0800 - None - 6bb52499-2ada-49e4-9938-f6fd8de7b42c - INFO - predict_handlers.py:33 - predict() - start to run online workflow
+2020-02-06 23:41:00,344+0800 - None - 6bb52499-2ada-49e4-9938-f6fd8de7b42c - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "down" method start
+2020-02-06 23:41:00,348+0800 - None - 6bb52499-2ada-49e4-9938-f6fd8de7b42c - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "down" method end, next direction: "down"
+2020-02-06 23:41:00,348+0800 - None - 6bb52499-2ada-49e4-9938-f6fd8de7b42c - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "down" method start
+2020-02-06 23:41:00,349+0800 - None - 6bb52499-2ada-49e4-9938-f6fd8de7b42c - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:1、取得总行授信批复；2、发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；3、在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；4、发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:41:00,350+0800 - None - 6bb52499-2ada-49e4-9938-f6fd8de7b42c - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:取得总行授信批复；
+2020-02-06 23:41:00,350+0800 - None - 6bb52499-2ada-49e4-9938-f6fd8de7b42c - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；
+2020-02-06 23:41:00,351+0800 - None - 6bb52499-2ada-49e4-9938-f6fd8de7b42c - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；
+2020-02-06 23:41:00,351+0800 - None - 6bb52499-2ada-49e4-9938-f6fd8de7b42c - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:41:00,351+0800 - None - 6bb52499-2ada-49e4-9938-f6fd8de7b42c - INFO - extract_tools.py:71 - extract_preconditions() - extract_preconditions::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377]]}
+2020-02-06 23:41:00,352+0800 - None - 6bb52499-2ada-49e4-9938-f6fd8de7b42c - INFO - extract_tools.py:92 - extract_management_condition() - extract_management_condition::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377], ['1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销', 22, 478], ['2、由分行金融市场务部和支行共同督促发行人严格按照银监会文件要求，通过适当方式对我行尽职调查和审查过程中揭示的发行人面临的兑付风险、信用风险、政策风险及舆情风险等风险因素予以充分披露', 22, 576], ['3、债券存续期间，要加强资金流向监控，确保募集资金用途与披露用途保持一致，并符合相关监管规定，做好动态监测和兑付监督工作', 22, 668], ['要持续关注发行人经营、财务变动情况，如发现若出现内、外评级结果降至AA级以下、不良贷款率连续上升等可能影响债券本息兑付的重大不利影响，要积极采取有效措施防范风险，维护我行市场形象', 22, 729], ['4、指定浦东开发区支行副行长付东攀、公司部副经理丁黄嫣及客户经理薛莉隽为本笔业务管理责任人及直接责任人，前述责任人因岗位变动，其业务管理后续责任由继任者承担', 22, 819]]}
+2020-02-06 23:41:00,352+0800 - None - 6bb52499-2ada-49e4-9938-f6fd8de7b42c - INFO - extract_tools.py:178 - start_extract() - start_extract::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377], ['1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销', 22, 478], ['2、由分行金融市场务部和支行共同督促发行人严格按照银监会文件要求，通过适当方式对我行尽职调查和审查过程中揭示的发行人面临的兑付风险、信用风险、政策风险及舆情风险等风险因素予以充分披露', 22, 576], ['3、债券存续期间，要加强资金流向监控，确保募集资金用途与披露用途保持一致，并符合相关监管规定，做好动态监测和兑付监督工作', 22, 668], ['要持续关注发行人经营、财务变动情况，如发现若出现内、外评级结果降至AA级以下、不良贷款率连续上升等可能影响债券本息兑付的重大不利影响，要积极采取有效措施防范风险，维护我行市场形象', 22, 729], ['4、指定浦东开发区支行副行长付东攀、公司部副经理丁黄嫣及客户经理薛莉隽为本笔业务管理责任人及直接责任人，前述责任人因岗位变动，其业务管理后续责任由继任者承担', 22, 819]]}
+2020-02-06 23:41:00,352+0800 - None - 6bb52499-2ada-49e4-9938-f6fd8de7b42c - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "down" method end, next direction: "down"
+2020-02-06 23:41:00,352+0800 - None - 6bb52499-2ada-49e4-9938-f6fd8de7b42c - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "up" method start
+2020-02-06 23:41:00,352+0800 - None - 6bb52499-2ada-49e4-9938-f6fd8de7b42c - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "up" method end, next direction: "up"
+2020-02-06 23:41:00,352+0800 - None - 6bb52499-2ada-49e4-9938-f6fd8de7b42c - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "up" method start
+2020-02-06 23:41:00,352+0800 - None - 6bb52499-2ada-49e4-9938-f6fd8de7b42c - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "up" method end, next direction: "up"
+2020-02-06 23:41:00,353+0800 - None - 6bb52499-2ada-49e4-9938-f6fd8de7b42c - ERROR - dg_logging.py:186 - _exception() - 'scripts_results'	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 67, in post        result.update(self.predict(doctype, content, rich_content))      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 44, in predict        'result': output['scripts_results'],    KeyError: 'scripts_results'    
+2020-02-06 23:41:00,354+0800 - None - 6bb52499-2ada-49e4-9938-f6fd8de7b42c - INFO - predict_handlers.py:74 - post() - results: {"status": "ERROR", "msg": "'scripts_results'"}, cost time: 0.009343147277832031s
+2020-02-06 23:42:36,827+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:42:36,828+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:42:37,537+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:42:37,541+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:42:37,543+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:42:37,557+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:42:37,558+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:42:37,558+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:42:37,558+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:42:37,558+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:42:37,560+0800 - None - None - INFO - server.py:76 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:42:39,559+0800 - None - 497dccaa-1d34-4f04-bec6-687cbba9923f - INFO - predict_handlers.py:33 - predict() - start to run online workflow
+2020-02-06 23:42:39,559+0800 - None - 497dccaa-1d34-4f04-bec6-687cbba9923f - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "down" method start
+2020-02-06 23:42:39,563+0800 - None - 497dccaa-1d34-4f04-bec6-687cbba9923f - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "down" method end, next direction: "down"
+2020-02-06 23:42:39,563+0800 - None - 497dccaa-1d34-4f04-bec6-687cbba9923f - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "down" method start
+2020-02-06 23:42:39,563+0800 - None - 497dccaa-1d34-4f04-bec6-687cbba9923f - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:1、取得总行授信批复；2、发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；3、在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；4、发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:42:39,564+0800 - None - 497dccaa-1d34-4f04-bec6-687cbba9923f - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:取得总行授信批复；
+2020-02-06 23:42:39,564+0800 - None - 497dccaa-1d34-4f04-bec6-687cbba9923f - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；
+2020-02-06 23:42:39,565+0800 - None - 497dccaa-1d34-4f04-bec6-687cbba9923f - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；
+2020-02-06 23:42:39,565+0800 - None - 497dccaa-1d34-4f04-bec6-687cbba9923f - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:42:39,565+0800 - None - 497dccaa-1d34-4f04-bec6-687cbba9923f - INFO - extract_tools.py:71 - extract_preconditions() - extract_preconditions::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377]]}
+2020-02-06 23:42:39,566+0800 - None - 497dccaa-1d34-4f04-bec6-687cbba9923f - INFO - extract_tools.py:92 - extract_management_condition() - extract_management_condition::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377], ['1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销', 22, 478], ['2、由分行金融市场务部和支行共同督促发行人严格按照银监会文件要求，通过适当方式对我行尽职调查和审查过程中揭示的发行人面临的兑付风险、信用风险、政策风险及舆情风险等风险因素予以充分披露', 22, 576], ['3、债券存续期间，要加强资金流向监控，确保募集资金用途与披露用途保持一致，并符合相关监管规定，做好动态监测和兑付监督工作', 22, 668], ['要持续关注发行人经营、财务变动情况，如发现若出现内、外评级结果降至AA级以下、不良贷款率连续上升等可能影响债券本息兑付的重大不利影响，要积极采取有效措施防范风险，维护我行市场形象', 22, 729], ['4、指定浦东开发区支行副行长付东攀、公司部副经理丁黄嫣及客户经理薛莉隽为本笔业务管理责任人及直接责任人，前述责任人因岗位变动，其业务管理后续责任由继任者承担', 22, 819]]}
+2020-02-06 23:42:39,566+0800 - None - 497dccaa-1d34-4f04-bec6-687cbba9923f - INFO - extract_tools.py:178 - start_extract() - start_extract::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377], ['1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销', 22, 478], ['2、由分行金融市场务部和支行共同督促发行人严格按照银监会文件要求，通过适当方式对我行尽职调查和审查过程中揭示的发行人面临的兑付风险、信用风险、政策风险及舆情风险等风险因素予以充分披露', 22, 576], ['3、债券存续期间，要加强资金流向监控，确保募集资金用途与披露用途保持一致，并符合相关监管规定，做好动态监测和兑付监督工作', 22, 668], ['要持续关注发行人经营、财务变动情况，如发现若出现内、外评级结果降至AA级以下、不良贷款率连续上升等可能影响债券本息兑付的重大不利影响，要积极采取有效措施防范风险，维护我行市场形象', 22, 729], ['4、指定浦东开发区支行副行长付东攀、公司部副经理丁黄嫣及客户经理薛莉隽为本笔业务管理责任人及直接责任人，前述责任人因岗位变动，其业务管理后续责任由继任者承担', 22, 819]]}
+2020-02-06 23:42:39,567+0800 - None - 497dccaa-1d34-4f04-bec6-687cbba9923f - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "down" method end, next direction: "down"
+2020-02-06 23:42:39,567+0800 - None - 497dccaa-1d34-4f04-bec6-687cbba9923f - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "up" method start
+2020-02-06 23:42:39,567+0800 - None - 497dccaa-1d34-4f04-bec6-687cbba9923f - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "up" method end, next direction: "up"
+2020-02-06 23:42:39,567+0800 - None - 497dccaa-1d34-4f04-bec6-687cbba9923f - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "up" method start
+2020-02-06 23:42:39,567+0800 - None - 497dccaa-1d34-4f04-bec6-687cbba9923f - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "up" method end, next direction: "up"
+2020-02-06 23:42:39,569+0800 - None - 497dccaa-1d34-4f04-bec6-687cbba9923f - ERROR - dg_logging.py:186 - _exception() - 'scripts_results'	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 67, in post        result.update(self.predict(doctype, content, rich_content))      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 44, in predict        'result': output['scripts_results'],    KeyError: 'scripts_results'    
+2020-02-06 23:42:39,570+0800 - None - 497dccaa-1d34-4f04-bec6-687cbba9923f - INFO - predict_handlers.py:74 - post() - results: {"status": "ERROR", "msg": "'scripts_results'"}, cost time: 0.011212825775146484s
+2020-02-06 23:43:28,959+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:43:28,960+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:43:29,547+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:43:29,549+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:43:29,551+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:43:29,561+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:43:29,561+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:43:29,561+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:43:29,561+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:43:29,561+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:43:29,563+0800 - None - None - INFO - server.py:76 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:43:57,377+0800 - None - 30346a8e-b2e2-4232-b88a-d65d6adaab17 - INFO - predict_handlers.py:33 - predict() - start to run online workflow
+2020-02-06 23:43:57,377+0800 - None - 30346a8e-b2e2-4232-b88a-d65d6adaab17 - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "down" method start
+2020-02-06 23:43:57,385+0800 - None - 30346a8e-b2e2-4232-b88a-d65d6adaab17 - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "down" method end, next direction: "down"
+2020-02-06 23:43:57,385+0800 - None - 30346a8e-b2e2-4232-b88a-d65d6adaab17 - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "down" method start
+2020-02-06 23:43:57,386+0800 - None - 30346a8e-b2e2-4232-b88a-d65d6adaab17 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:1、取得总行授信批复；2、发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；3、在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；4、发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:43:57,386+0800 - None - 30346a8e-b2e2-4232-b88a-d65d6adaab17 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:取得总行授信批复；
+2020-02-06 23:43:57,387+0800 - None - 30346a8e-b2e2-4232-b88a-d65d6adaab17 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；
+2020-02-06 23:43:57,387+0800 - None - 30346a8e-b2e2-4232-b88a-d65d6adaab17 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；
+2020-02-06 23:43:57,387+0800 - None - 30346a8e-b2e2-4232-b88a-d65d6adaab17 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:43:57,387+0800 - None - 30346a8e-b2e2-4232-b88a-d65d6adaab17 - INFO - extract_tools.py:71 - extract_preconditions() - extract_preconditions::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377]]}
+2020-02-06 23:43:57,388+0800 - None - 30346a8e-b2e2-4232-b88a-d65d6adaab17 - INFO - extract_tools.py:92 - extract_management_condition() - extract_management_condition::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377], ['1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销', 22, 478], ['2、由分行金融市场务部和支行共同督促发行人严格按照银监会文件要求，通过适当方式对我行尽职调查和审查过程中揭示的发行人面临的兑付风险、信用风险、政策风险及舆情风险等风险因素予以充分披露', 22, 576], ['3、债券存续期间，要加强资金流向监控，确保募集资金用途与披露用途保持一致，并符合相关监管规定，做好动态监测和兑付监督工作', 22, 668], ['要持续关注发行人经营、财务变动情况，如发现若出现内、外评级结果降至AA级以下、不良贷款率连续上升等可能影响债券本息兑付的重大不利影响，要积极采取有效措施防范风险，维护我行市场形象', 22, 729], ['4、指定浦东开发区支行副行长付东攀、公司部副经理丁黄嫣及客户经理薛莉隽为本笔业务管理责任人及直接责任人，前述责任人因岗位变动，其业务管理后续责任由继任者承担', 22, 819]]}
+2020-02-06 23:43:57,388+0800 - None - 30346a8e-b2e2-4232-b88a-d65d6adaab17 - INFO - extract_tools.py:178 - start_extract() - start_extract::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377], ['1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销', 22, 478], ['2、由分行金融市场务部和支行共同督促发行人严格按照银监会文件要求，通过适当方式对我行尽职调查和审查过程中揭示的发行人面临的兑付风险、信用风险、政策风险及舆情风险等风险因素予以充分披露', 22, 576], ['3、债券存续期间，要加强资金流向监控，确保募集资金用途与披露用途保持一致，并符合相关监管规定，做好动态监测和兑付监督工作', 22, 668], ['要持续关注发行人经营、财务变动情况，如发现若出现内、外评级结果降至AA级以下、不良贷款率连续上升等可能影响债券本息兑付的重大不利影响，要积极采取有效措施防范风险，维护我行市场形象', 22, 729], ['4、指定浦东开发区支行副行长付东攀、公司部副经理丁黄嫣及客户经理薛莉隽为本笔业务管理责任人及直接责任人，前述责任人因岗位变动，其业务管理后续责任由继任者承担', 22, 819]]}
+2020-02-06 23:43:57,388+0800 - None - 30346a8e-b2e2-4232-b88a-d65d6adaab17 - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "down" method end, next direction: "down"
+2020-02-06 23:43:57,389+0800 - None - 30346a8e-b2e2-4232-b88a-d65d6adaab17 - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "up" method start
+2020-02-06 23:43:57,389+0800 - None - 30346a8e-b2e2-4232-b88a-d65d6adaab17 - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "up" method end, next direction: "up"
+2020-02-06 23:43:57,389+0800 - None - 30346a8e-b2e2-4232-b88a-d65d6adaab17 - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "up" method start
+2020-02-06 23:43:57,389+0800 - None - 30346a8e-b2e2-4232-b88a-d65d6adaab17 - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "up" method end, next direction: "up"
+2020-02-06 23:43:57,390+0800 - None - 30346a8e-b2e2-4232-b88a-d65d6adaab17 - ERROR - dg_logging.py:186 - _exception() - 'scripts_results'	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 67, in post        result.update(self.predict(doctype, content, rich_content))      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 44, in predict        'result': output['scripts_results'],    KeyError: 'scripts_results'    
+2020-02-06 23:43:57,390+0800 - None - 30346a8e-b2e2-4232-b88a-d65d6adaab17 - INFO - predict_handlers.py:74 - post() - results: {"status": "ERROR", "msg": "'scripts_results'"}, cost time: 0.014049768447875977s
+2020-02-06 23:45:35,028+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:45:35,029+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:45:35,849+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:45:35,852+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:45:35,854+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:45:35,866+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:45:35,867+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:45:35,867+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:45:35,867+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:45:35,867+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:45:35,869+0800 - None - None - INFO - server.py:76 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:45:37,840+0800 - None - 0f657f1b-c1e3-4c8d-95d4-9da6c4ce9b68 - INFO - predict_handlers.py:33 - predict() - start to run online workflow
+2020-02-06 23:45:37,841+0800 - None - 0f657f1b-c1e3-4c8d-95d4-9da6c4ce9b68 - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "down" method start
+2020-02-06 23:45:37,847+0800 - None - 0f657f1b-c1e3-4c8d-95d4-9da6c4ce9b68 - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "down" method end, next direction: "down"
+2020-02-06 23:45:37,847+0800 - None - 0f657f1b-c1e3-4c8d-95d4-9da6c4ce9b68 - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "down" method start
+2020-02-06 23:45:37,848+0800 - None - 0f657f1b-c1e3-4c8d-95d4-9da6c4ce9b68 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:1、取得总行授信批复；2、发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；3、在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；4、发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:45:37,848+0800 - None - 0f657f1b-c1e3-4c8d-95d4-9da6c4ce9b68 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:取得总行授信批复；
+2020-02-06 23:45:37,849+0800 - None - 0f657f1b-c1e3-4c8d-95d4-9da6c4ce9b68 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；
+2020-02-06 23:45:37,850+0800 - None - 0f657f1b-c1e3-4c8d-95d4-9da6c4ce9b68 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；
+2020-02-06 23:45:37,850+0800 - None - 0f657f1b-c1e3-4c8d-95d4-9da6c4ce9b68 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:45:37,850+0800 - None - 0f657f1b-c1e3-4c8d-95d4-9da6c4ce9b68 - INFO - extract_tools.py:71 - extract_preconditions() - extract_preconditions::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377]]}
+2020-02-06 23:45:37,851+0800 - None - 0f657f1b-c1e3-4c8d-95d4-9da6c4ce9b68 - INFO - extract_tools.py:92 - extract_management_condition() - extract_management_condition::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377], ['1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销', 22, 478], ['2、由分行金融市场务部和支行共同督促发行人严格按照银监会文件要求，通过适当方式对我行尽职调查和审查过程中揭示的发行人面临的兑付风险、信用风险、政策风险及舆情风险等风险因素予以充分披露', 22, 576], ['3、债券存续期间，要加强资金流向监控，确保募集资金用途与披露用途保持一致，并符合相关监管规定，做好动态监测和兑付监督工作', 22, 668], ['要持续关注发行人经营、财务变动情况，如发现若出现内、外评级结果降至AA级以下、不良贷款率连续上升等可能影响债券本息兑付的重大不利影响，要积极采取有效措施防范风险，维护我行市场形象', 22, 729], ['4、指定浦东开发区支行副行长付东攀、公司部副经理丁黄嫣及客户经理薛莉隽为本笔业务管理责任人及直接责任人，前述责任人因岗位变动，其业务管理后续责任由继任者承担', 22, 819]]}
+2020-02-06 23:45:37,851+0800 - None - 0f657f1b-c1e3-4c8d-95d4-9da6c4ce9b68 - INFO - extract_tools.py:178 - start_extract() - start_extract::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377], ['1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销', 22, 478], ['2、由分行金融市场务部和支行共同督促发行人严格按照银监会文件要求，通过适当方式对我行尽职调查和审查过程中揭示的发行人面临的兑付风险、信用风险、政策风险及舆情风险等风险因素予以充分披露', 22, 576], ['3、债券存续期间，要加强资金流向监控，确保募集资金用途与披露用途保持一致，并符合相关监管规定，做好动态监测和兑付监督工作', 22, 668], ['要持续关注发行人经营、财务变动情况，如发现若出现内、外评级结果降至AA级以下、不良贷款率连续上升等可能影响债券本息兑付的重大不利影响，要积极采取有效措施防范风险，维护我行市场形象', 22, 729], ['4、指定浦东开发区支行副行长付东攀、公司部副经理丁黄嫣及客户经理薛莉隽为本笔业务管理责任人及直接责任人，前述责任人因岗位变动，其业务管理后续责任由继任者承担', 22, 819]]}
+2020-02-06 23:45:37,851+0800 - None - 0f657f1b-c1e3-4c8d-95d4-9da6c4ce9b68 - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "down" method end, next direction: "down"
+2020-02-06 23:45:37,852+0800 - None - 0f657f1b-c1e3-4c8d-95d4-9da6c4ce9b68 - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "up" method start
+2020-02-06 23:45:37,852+0800 - None - 0f657f1b-c1e3-4c8d-95d4-9da6c4ce9b68 - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "up" method end, next direction: "up"
+2020-02-06 23:45:37,852+0800 - None - 0f657f1b-c1e3-4c8d-95d4-9da6c4ce9b68 - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "up" method start
+2020-02-06 23:45:37,852+0800 - None - 0f657f1b-c1e3-4c8d-95d4-9da6c4ce9b68 - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "up" method end, next direction: "up"
+2020-02-06 23:45:37,854+0800 - None - 0f657f1b-c1e3-4c8d-95d4-9da6c4ce9b68 - ERROR - dg_logging.py:186 - _exception() - 'scripts_results'	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 67, in post        result.update(self.predict(doctype, content, rich_content))      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 44, in predict        'result': output['scripts_results'],    KeyError: 'scripts_results'    
+2020-02-06 23:45:37,855+0800 - None - 0f657f1b-c1e3-4c8d-95d4-9da6c4ce9b68 - INFO - predict_handlers.py:74 - post() - results: {"status": "ERROR", "msg": "'scripts_results'"}, cost time: 0.014467000961303711s
+2020-02-06 23:47:10,428+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:47:10,429+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:47:11,144+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:47:11,148+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:47:11,151+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:47:11,164+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:47:11,164+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:47:11,164+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:47:11,164+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:47:11,164+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:47:11,167+0800 - None - None - INFO - server.py:76 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:47:13,898+0800 - None - 283650f7-bfc8-4e3c-bb27-b0b321bc0deb - INFO - predict_handlers.py:33 - predict() - start to run online workflow
+2020-02-06 23:47:13,899+0800 - None - 283650f7-bfc8-4e3c-bb27-b0b321bc0deb - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "down" method start
+2020-02-06 23:47:13,902+0800 - None - 283650f7-bfc8-4e3c-bb27-b0b321bc0deb - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "down" method end, next direction: "down"
+2020-02-06 23:47:13,902+0800 - None - 283650f7-bfc8-4e3c-bb27-b0b321bc0deb - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "down" method start
+2020-02-06 23:47:13,903+0800 - None - 283650f7-bfc8-4e3c-bb27-b0b321bc0deb - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:1、取得总行授信批复；2、发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；3、在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；4、发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:47:13,904+0800 - None - 283650f7-bfc8-4e3c-bb27-b0b321bc0deb - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:取得总行授信批复；
+2020-02-06 23:47:13,904+0800 - None - 283650f7-bfc8-4e3c-bb27-b0b321bc0deb - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；
+2020-02-06 23:47:13,904+0800 - None - 283650f7-bfc8-4e3c-bb27-b0b321bc0deb - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；
+2020-02-06 23:47:13,904+0800 - None - 283650f7-bfc8-4e3c-bb27-b0b321bc0deb - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:47:13,904+0800 - None - 283650f7-bfc8-4e3c-bb27-b0b321bc0deb - INFO - extract_tools.py:71 - extract_preconditions() - extract_preconditions::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377]]}
+2020-02-06 23:47:13,905+0800 - None - 283650f7-bfc8-4e3c-bb27-b0b321bc0deb - INFO - extract_tools.py:92 - extract_management_condition() - extract_management_condition::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377], ['1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销', 22, 478], ['2、由分行金融市场务部和支行共同督促发行人严格按照银监会文件要求，通过适当方式对我行尽职调查和审查过程中揭示的发行人面临的兑付风险、信用风险、政策风险及舆情风险等风险因素予以充分披露', 22, 576], ['3、债券存续期间，要加强资金流向监控，确保募集资金用途与披露用途保持一致，并符合相关监管规定，做好动态监测和兑付监督工作', 22, 668], ['要持续关注发行人经营、财务变动情况，如发现若出现内、外评级结果降至AA级以下、不良贷款率连续上升等可能影响债券本息兑付的重大不利影响，要积极采取有效措施防范风险，维护我行市场形象', 22, 729], ['4、指定浦东开发区支行副行长付东攀、公司部副经理丁黄嫣及客户经理薛莉隽为本笔业务管理责任人及直接责任人，前述责任人因岗位变动，其业务管理后续责任由继任者承担', 22, 819]]}
+2020-02-06 23:47:13,905+0800 - None - 283650f7-bfc8-4e3c-bb27-b0b321bc0deb - INFO - extract_tools.py:178 - start_extract() - start_extract::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377], ['1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销', 22, 478], ['2、由分行金融市场务部和支行共同督促发行人严格按照银监会文件要求，通过适当方式对我行尽职调查和审查过程中揭示的发行人面临的兑付风险、信用风险、政策风险及舆情风险等风险因素予以充分披露', 22, 576], ['3、债券存续期间，要加强资金流向监控，确保募集资金用途与披露用途保持一致，并符合相关监管规定，做好动态监测和兑付监督工作', 22, 668], ['要持续关注发行人经营、财务变动情况，如发现若出现内、外评级结果降至AA级以下、不良贷款率连续上升等可能影响债券本息兑付的重大不利影响，要积极采取有效措施防范风险，维护我行市场形象', 22, 729], ['4、指定浦东开发区支行副行长付东攀、公司部副经理丁黄嫣及客户经理薛莉隽为本笔业务管理责任人及直接责任人，前述责任人因岗位变动，其业务管理后续责任由继任者承担', 22, 819]]}
+2020-02-06 23:47:13,905+0800 - None - 283650f7-bfc8-4e3c-bb27-b0b321bc0deb - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "down" method end, next direction: "down"
+2020-02-06 23:47:13,905+0800 - None - 283650f7-bfc8-4e3c-bb27-b0b321bc0deb - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "up" method start
+2020-02-06 23:47:13,905+0800 - None - 283650f7-bfc8-4e3c-bb27-b0b321bc0deb - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "up" method end, next direction: "up"
+2020-02-06 23:47:13,906+0800 - None - 283650f7-bfc8-4e3c-bb27-b0b321bc0deb - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "up" method start
+2020-02-06 23:47:13,906+0800 - None - 283650f7-bfc8-4e3c-bb27-b0b321bc0deb - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "up" method end, next direction: "up"
+2020-02-06 23:47:13,907+0800 - None - 283650f7-bfc8-4e3c-bb27-b0b321bc0deb - ERROR - dg_logging.py:186 - _exception() - 'scripts_results'	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 67, in post        result.update(self.predict(doctype, content, rich_content))      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 44, in predict        'result': output['scripts_results'],    KeyError: 'scripts_results'    
+2020-02-06 23:47:13,907+0800 - None - 283650f7-bfc8-4e3c-bb27-b0b321bc0deb - INFO - predict_handlers.py:74 - post() - results: {"status": "ERROR", "msg": "'scripts_results'"}, cost time: 0.008941650390625s
+2020-02-06 23:47:49,142+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:47:49,143+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:47:49,717+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:47:49,719+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:47:49,721+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:47:49,729+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:47:49,729+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:47:49,729+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:47:49,729+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:47:49,729+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:47:49,731+0800 - None - None - INFO - server.py:76 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:47:58,132+0800 - None - 7567eef4-dc8a-4637-916f-164d96c52f4f - INFO - predict_handlers.py:33 - predict() - start to run online workflow
+2020-02-06 23:47:58,135+0800 - None - 7567eef4-dc8a-4637-916f-164d96c52f4f - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "down" method start
+2020-02-06 23:47:58,142+0800 - None - 7567eef4-dc8a-4637-916f-164d96c52f4f - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "down" method end, next direction: "down"
+2020-02-06 23:47:58,142+0800 - None - 7567eef4-dc8a-4637-916f-164d96c52f4f - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "down" method start
+2020-02-06 23:47:58,144+0800 - None - 7567eef4-dc8a-4637-916f-164d96c52f4f - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:1、取得总行授信批复；2、发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；3、在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；4、发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:47:58,145+0800 - None - 7567eef4-dc8a-4637-916f-164d96c52f4f - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:取得总行授信批复；
+2020-02-06 23:47:58,145+0800 - None - 7567eef4-dc8a-4637-916f-164d96c52f4f - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；
+2020-02-06 23:47:58,146+0800 - None - 7567eef4-dc8a-4637-916f-164d96c52f4f - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；
+2020-02-06 23:47:58,146+0800 - None - 7567eef4-dc8a-4637-916f-164d96c52f4f - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:47:58,146+0800 - None - 7567eef4-dc8a-4637-916f-164d96c52f4f - INFO - extract_tools.py:71 - extract_preconditions() - extract_preconditions::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377]]}
+2020-02-06 23:47:58,147+0800 - None - 7567eef4-dc8a-4637-916f-164d96c52f4f - INFO - extract_tools.py:92 - extract_management_condition() - extract_management_condition::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377], ['1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销', 22, 478], ['2、由分行金融市场务部和支行共同督促发行人严格按照银监会文件要求，通过适当方式对我行尽职调查和审查过程中揭示的发行人面临的兑付风险、信用风险、政策风险及舆情风险等风险因素予以充分披露', 22, 576], ['3、债券存续期间，要加强资金流向监控，确保募集资金用途与披露用途保持一致，并符合相关监管规定，做好动态监测和兑付监督工作', 22, 668], ['要持续关注发行人经营、财务变动情况，如发现若出现内、外评级结果降至AA级以下、不良贷款率连续上升等可能影响债券本息兑付的重大不利影响，要积极采取有效措施防范风险，维护我行市场形象', 22, 729], ['4、指定浦东开发区支行副行长付东攀、公司部副经理丁黄嫣及客户经理薛莉隽为本笔业务管理责任人及直接责任人，前述责任人因岗位变动，其业务管理后续责任由继任者承担', 22, 819]]}
+2020-02-06 23:47:58,148+0800 - None - 7567eef4-dc8a-4637-916f-164d96c52f4f - INFO - extract_tools.py:178 - start_extract() - start_extract::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377], ['1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销', 22, 478], ['2、由分行金融市场务部和支行共同督促发行人严格按照银监会文件要求，通过适当方式对我行尽职调查和审查过程中揭示的发行人面临的兑付风险、信用风险、政策风险及舆情风险等风险因素予以充分披露', 22, 576], ['3、债券存续期间，要加强资金流向监控，确保募集资金用途与披露用途保持一致，并符合相关监管规定，做好动态监测和兑付监督工作', 22, 668], ['要持续关注发行人经营、财务变动情况，如发现若出现内、外评级结果降至AA级以下、不良贷款率连续上升等可能影响债券本息兑付的重大不利影响，要积极采取有效措施防范风险，维护我行市场形象', 22, 729], ['4、指定浦东开发区支行副行长付东攀、公司部副经理丁黄嫣及客户经理薛莉隽为本笔业务管理责任人及直接责任人，前述责任人因岗位变动，其业务管理后续责任由继任者承担', 22, 819]]}
+2020-02-06 23:47:58,148+0800 - None - 7567eef4-dc8a-4637-916f-164d96c52f4f - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "down" method end, next direction: "down"
+2020-02-06 23:47:58,148+0800 - None - 7567eef4-dc8a-4637-916f-164d96c52f4f - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "up" method start
+2020-02-06 23:47:58,149+0800 - None - 7567eef4-dc8a-4637-916f-164d96c52f4f - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "up" method end, next direction: "up"
+2020-02-06 23:47:58,149+0800 - None - 7567eef4-dc8a-4637-916f-164d96c52f4f - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "up" method start
+2020-02-06 23:47:58,149+0800 - None - 7567eef4-dc8a-4637-916f-164d96c52f4f - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "up" method end, next direction: "up"
+2020-02-06 23:47:58,151+0800 - None - 7567eef4-dc8a-4637-916f-164d96c52f4f - ERROR - dg_logging.py:186 - _exception() - 'scripts_results'	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 67, in post        result.update(self.predict(doctype, content, rich_content))      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 44, in predict        'result': output['scripts_results'],    KeyError: 'scripts_results'    
+2020-02-06 23:47:58,152+0800 - None - 7567eef4-dc8a-4637-916f-164d96c52f4f - INFO - predict_handlers.py:74 - post() - results: {"status": "ERROR", "msg": "'scripts_results'"}, cost time: 0.020849943161010742s
+2020-02-06 23:48:19,884+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:48:19,885+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:48:20,744+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:48:20,747+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:48:20,750+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:48:20,762+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:48:20,762+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:48:20,762+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:48:20,762+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:48:20,762+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:48:20,765+0800 - None - None - INFO - server.py:76 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:48:22,484+0800 - None - 84b3814b-c25d-4d23-8bad-0cd339023817 - INFO - predict_handlers.py:33 - predict() - start to run online workflow
+2020-02-06 23:48:22,484+0800 - None - 84b3814b-c25d-4d23-8bad-0cd339023817 - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "down" method start
+2020-02-06 23:48:22,488+0800 - None - 84b3814b-c25d-4d23-8bad-0cd339023817 - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "down" method end, next direction: "down"
+2020-02-06 23:48:22,488+0800 - None - 84b3814b-c25d-4d23-8bad-0cd339023817 - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "down" method start
+2020-02-06 23:48:22,488+0800 - None - 84b3814b-c25d-4d23-8bad-0cd339023817 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:1、取得总行授信批复；2、发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；3、在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；4、发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:48:22,489+0800 - None - 84b3814b-c25d-4d23-8bad-0cd339023817 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:取得总行授信批复；
+2020-02-06 23:48:22,489+0800 - None - 84b3814b-c25d-4d23-8bad-0cd339023817 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；
+2020-02-06 23:48:22,490+0800 - None - 84b3814b-c25d-4d23-8bad-0cd339023817 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；
+2020-02-06 23:48:22,490+0800 - None - 84b3814b-c25d-4d23-8bad-0cd339023817 - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:48:22,490+0800 - None - 84b3814b-c25d-4d23-8bad-0cd339023817 - INFO - extract_tools.py:71 - extract_preconditions() - extract_preconditions::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377]]}
+2020-02-06 23:48:22,490+0800 - None - 84b3814b-c25d-4d23-8bad-0cd339023817 - INFO - extract_tools.py:92 - extract_management_condition() - extract_management_condition::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377], ['1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销', 22, 478], ['2、由分行金融市场务部和支行共同督促发行人严格按照银监会文件要求，通过适当方式对我行尽职调查和审查过程中揭示的发行人面临的兑付风险、信用风险、政策风险及舆情风险等风险因素予以充分披露', 22, 576], ['3、债券存续期间，要加强资金流向监控，确保募集资金用途与披露用途保持一致，并符合相关监管规定，做好动态监测和兑付监督工作', 22, 668], ['要持续关注发行人经营、财务变动情况，如发现若出现内、外评级结果降至AA级以下、不良贷款率连续上升等可能影响债券本息兑付的重大不利影响，要积极采取有效措施防范风险，维护我行市场形象', 22, 729], ['4、指定浦东开发区支行副行长付东攀、公司部副经理丁黄嫣及客户经理薛莉隽为本笔业务管理责任人及直接责任人，前述责任人因岗位变动，其业务管理后续责任由继任者承担', 22, 819]]}
+2020-02-06 23:48:22,491+0800 - None - 84b3814b-c25d-4d23-8bad-0cd339023817 - INFO - extract_tools.py:178 - start_extract() - start_extract::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377], ['1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销', 22, 478], ['2、由分行金融市场务部和支行共同督促发行人严格按照银监会文件要求，通过适当方式对我行尽职调查和审查过程中揭示的发行人面临的兑付风险、信用风险、政策风险及舆情风险等风险因素予以充分披露', 22, 576], ['3、债券存续期间，要加强资金流向监控，确保募集资金用途与披露用途保持一致，并符合相关监管规定，做好动态监测和兑付监督工作', 22, 668], ['要持续关注发行人经营、财务变动情况，如发现若出现内、外评级结果降至AA级以下、不良贷款率连续上升等可能影响债券本息兑付的重大不利影响，要积极采取有效措施防范风险，维护我行市场形象', 22, 729], ['4、指定浦东开发区支行副行长付东攀、公司部副经理丁黄嫣及客户经理薛莉隽为本笔业务管理责任人及直接责任人，前述责任人因岗位变动，其业务管理后续责任由继任者承担', 22, 819]]}
+2020-02-06 23:48:22,491+0800 - None - 84b3814b-c25d-4d23-8bad-0cd339023817 - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "down" method end, next direction: "down"
+2020-02-06 23:48:22,491+0800 - None - 84b3814b-c25d-4d23-8bad-0cd339023817 - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "up" method start
+2020-02-06 23:48:22,491+0800 - None - 84b3814b-c25d-4d23-8bad-0cd339023817 - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "up" method end, next direction: "up"
+2020-02-06 23:48:22,491+0800 - None - 84b3814b-c25d-4d23-8bad-0cd339023817 - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "up" method start
+2020-02-06 23:48:22,491+0800 - None - 84b3814b-c25d-4d23-8bad-0cd339023817 - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "up" method end, next direction: "up"
+2020-02-06 23:48:22,493+0800 - None - 84b3814b-c25d-4d23-8bad-0cd339023817 - ERROR - dg_logging.py:186 - _exception() - 'scripts_results'	Traceback (most recent call last):      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 67, in post        result.update(self.predict(doctype, content, rich_content))      File "/Users/chenxuan/workspace/classify_extract/classify_extract/app/handlers/predict_handlers.py", line 44, in predict        'result': output['scripts_results'],    KeyError: 'scripts_results'    
+2020-02-06 23:48:22,493+0800 - None - 84b3814b-c25d-4d23-8bad-0cd339023817 - INFO - predict_handlers.py:74 - post() - results: {"status": "ERROR", "msg": "'scripts_results'"}, cost time: 0.008900165557861328s
+2020-02-06 23:51:20,517+0800 - None - None - INFO - server.py:45 - __init__() - initializing u_shape_framework engine ...
+2020-02-06 23:51:20,518+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: data_preprocess, type: custom
+2020-02-06 23:51:21,330+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: content_to_text, type: custom
+2020-02-06 23:51:21,335+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: classify_extract, type: custom
+2020-02-06 23:51:21,336+0800 - None - None - INFO - base_engine.py:82 - _load_processor() - load processor: model_train, type: custom
+2020-02-06 23:51:21,350+0800 - None - None - INFO - base_engine.py:73 - _load_processors() - load processors success.
+2020-02-06 23:51:21,350+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow online
+2020-02-06 23:51:21,351+0800 - None - None - INFO - workflow.py:31 - __init__() - init workflow offline
+2020-02-06 23:51:21,351+0800 - None - None - INFO - server.py:47 - __init__() - engine initialize finish
+2020-02-06 23:51:21,351+0800 - None - None - INFO - server.py:53 - start() - start server...
+2020-02-06 23:51:21,353+0800 - None - None - INFO - server.py:76 - start() - server starts with address: 0.0.0.0, port: 8000
+2020-02-06 23:51:23,990+0800 - None - 14841987-4400-4f4d-85d4-ddfa6129018f - INFO - predict_handlers.py:33 - predict() - start to run online workflow
+2020-02-06 23:51:23,991+0800 - None - 14841987-4400-4f4d-85d4-ddfa6129018f - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "down" method start
+2020-02-06 23:51:23,995+0800 - None - 14841987-4400-4f4d-85d4-ddfa6129018f - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "down" method end, next direction: "down"
+2020-02-06 23:51:23,996+0800 - None - 14841987-4400-4f4d-85d4-ddfa6129018f - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "down" method start
+2020-02-06 23:51:23,997+0800 - None - 14841987-4400-4f4d-85d4-ddfa6129018f - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:1、取得总行授信批复；2、发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；3、在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；4、发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:51:23,997+0800 - None - 14841987-4400-4f4d-85d4-ddfa6129018f - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:取得总行授信批复；
+2020-02-06 23:51:23,998+0800 - None - 14841987-4400-4f4d-85d4-ddfa6129018f - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人主体外部评级最终结果不低于AA级（含）；未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构；
+2020-02-06 23:51:23,999+0800 - None - 14841987-4400-4f4d-85d4-ddfa6129018f - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权；
+2020-02-06 23:51:23,999+0800 - None - 14841987-4400-4f4d-85d4-ddfa6129018f - INFO - extract_tools.py:117 - cut_prerequisite() - 前提条件文本内容:发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认。
+2020-02-06 23:51:24,000+0800 - None - 14841987-4400-4f4d-85d4-ddfa6129018f - INFO - extract_tools.py:71 - extract_preconditions() - extract_preconditions::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377]]}
+2020-02-06 23:51:24,001+0800 - None - 14841987-4400-4f4d-85d4-ddfa6129018f - INFO - extract_tools.py:92 - extract_management_condition() - extract_management_condition::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377], ['1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销', 22, 478], ['2、由分行金融市场务部和支行共同督促发行人严格按照银监会文件要求，通过适当方式对我行尽职调查和审查过程中揭示的发行人面临的兑付风险、信用风险、政策风险及舆情风险等风险因素予以充分披露', 22, 576], ['3、债券存续期间，要加强资金流向监控，确保募集资金用途与披露用途保持一致，并符合相关监管规定，做好动态监测和兑付监督工作', 22, 668], ['要持续关注发行人经营、财务变动情况，如发现若出现内、外评级结果降至AA级以下、不良贷款率连续上升等可能影响债券本息兑付的重大不利影响，要积极采取有效措施防范风险，维护我行市场形象', 22, 729], ['4、指定浦东开发区支行副行长付东攀、公司部副经理丁黄嫣及客户经理薛莉隽为本笔业务管理责任人及直接责任人，前述责任人因岗位变动，其业务管理后续责任由继任者承担', 22, 819]]}
+2020-02-06 23:51:24,001+0800 - None - 14841987-4400-4f4d-85d4-ddfa6129018f - INFO - extract_tools.py:178 - start_extract() - start_extract::{11: [['信贷审查委员会2018年第91次会议经审议并表决，一致同意由海通证券股份有限公司为牵头主承销商，我行与中国银行、建设银行、交通银行、申万宏源证券有限公司为联席主承销商以余额包销方式共同承销汇丰银行（中国）有限公司金融债，发行总金额不超过160亿元，其中我行承销份额不超过32亿元，期限不超过5年，募集资金将用于优化资产负债结构，充实长期稳定资金；我行银行账户投资额度不超过各期发行额度的20%，且投资总额不超过16亿元；相应调增32亿元债务融资工具承销专项授信额度', 22, 5], ['同时，对浦东开发区支行提出以下要求：', 22, 238], ['取得总行授信批复', 22, 263], ['发行人主体外部评级最终结果不低于AA级（含）', 22, 274], ['未经我行书面同意，不得变更本次尽职调查报告中拟定的上述中介服务机构', 22, 297], ['在律师事务所出具的书面意见书中，确认本次金融债券发行获得董事会或唯一股东的合法授权', 22, 333], ['发行人书面承诺或在承销协议中约定,发行人和主承销商就本次债券发行条款和发行方案细节（包括债券期限、利率区间、发行期限、承销方式、募集款项的划付、承销费用的支付等事项）达成一致并以书面形式确认', 22, 377], ['1、由分行金融市场部和支行协助总行金融市场部做好本笔金融债券分次发行的择时、定价及市场推介工作，避免我行承担被动包销责任，如出现被动包销情形，对超出我行发行额度的部分须纳入交易账户核算并尽快分销', 22, 478], ['2、由分行金融市场务部和支行共同督促发行人严格按照银监会文件要求，通过适当方式对我行尽职调查和审查过程中揭示的发行人面临的兑付风险、信用风险、政策风险及舆情风险等风险因素予以充分披露', 22, 576], ['3、债券存续期间，要加强资金流向监控，确保募集资金用途与披露用途保持一致，并符合相关监管规定，做好动态监测和兑付监督工作', 22, 668], ['要持续关注发行人经营、财务变动情况，如发现若出现内、外评级结果降至AA级以下、不良贷款率连续上升等可能影响债券本息兑付的重大不利影响，要积极采取有效措施防范风险，维护我行市场形象', 22, 729], ['4、指定浦东开发区支行副行长付东攀、公司部副经理丁黄嫣及客户经理薛莉隽为本笔业务管理责任人及直接责任人，前述责任人因岗位变动，其业务管理后续责任由继任者承担', 22, 819]]}
+2020-02-06 23:51:24,002+0800 - None - 14841987-4400-4f4d-85d4-ddfa6129018f - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "down" method end, next direction: "down"
+2020-02-06 23:51:24,002+0800 - None - 14841987-4400-4f4d-85d4-ddfa6129018f - DEBUG - processor_base.py:65 - process() - processor: classify_extract, "up" method start
+2020-02-06 23:51:24,002+0800 - None - 14841987-4400-4f4d-85d4-ddfa6129018f - DEBUG - processor_base.py:79 - process() - processor: classify_extract, "up" method end, next direction: "up"
+2020-02-06 23:51:24,002+0800 - None - 14841987-4400-4f4d-85d4-ddfa6129018f - DEBUG - processor_base.py:65 - process() - processor: content_to_text, "up" method start
+2020-02-06 23:51:24,003+0800 - None - 14841987-4400-4f4d-85d4-ddfa6129018f - DEBUG - processor_base.py:79 - process() - processor: content_to_text, "up" method end, next direction: "up"
+2020-02-06 23:51:24,003+0800 - None - 14841987-4400-4f4d-85d4-ddfa6129018f - INFO - predict_handlers.py:74 - post() - results: {"status": "OK", "msg": "", "result": ""}, cost time: 0.014844894409179688s

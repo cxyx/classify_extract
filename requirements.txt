@@ -1,0 +1,5 @@
+tornado==4.4.2
+redis==2.10.5
+Cython==0.28.3
+git+ssh://git@git.datagrand.com:58422/nlp/u_shape_framework.git@v0.7.2
+git+ssh://git@git.datagrand.com:58422/nlp/dg_logging.git@v0.3.6

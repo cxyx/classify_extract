@@ -1,0 +1,56 @@
+[
+    {
+        "content": "Word有bug\u0005哈哈\u0005表格：\u0005Col1Col2Col3Col4\u00051234\u0005Insert \u0005", 
+        "fields": [
+            {
+                "field_id": 1518, 
+                "start_idx": 0, 
+                "value": "Word"
+            }, 
+            {
+                "field_id": 1518, 
+                "start_idx": 34, 
+                "value": "2"
+            }, 
+            {
+                "field_id": 1519, 
+                "start_idx": 9, 
+                "value": "哈哈"
+            }, 
+            {
+                "field_id": 1519, 
+                "start_idx": 28, 
+                "value": "Col4"
+            }
+        ], 
+        "doc_id": 1099, 
+        "rich_content_path": "37c45f22-0795-11e9-97f7-02420a000c17_all.json"
+    }, 
+    {
+        "content": "你好，我是老王\u0005[[[下面是表格：][][][]][[Col1][Col2][Col3][Col4]][[1][2][3][4]]]\u0005Col1Col2Col3Col4\u00051234\u0005", 
+        "fields": [
+            {
+                "field_id": 1518, 
+                "start_idx": 0, 
+                "value": "你好"
+            }, 
+            {
+                "field_id": 1518, 
+                "start_idx": 56, 
+                "value": "2"
+            }, 
+            {
+                "field_id": 1519, 
+                "start_idx": 5, 
+                "value": "老王"
+            }, 
+            {
+                "field_id": 1519, 
+                "start_idx": 39, 
+                "value": "Col3"
+            }
+        ], 
+        "doc_id": 1100, 
+        "rich_content_path": "37c79a02-0795-11e9-97f7-02420a000c17_all.json"
+    }
+]
